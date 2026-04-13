@@ -1,0 +1,8 @@
+streamlit
+groq
+langchain
+langchain-community
+langchain-cohere
+faiss-cpu
+pypdf
+cohere
