@@ -154,41 +154,6 @@ CONTEXTO:
 PERGUNTA:
 {texto_usuario}
 
-COMO VOCÊ DEVE RESPONDER:
-
-- Seja direto, claro e operacional (linguagem de quem trabalha no SoC)
-- Vá direto ao ponto, sem enrolação
-- Explique rapidamente o cenário e já diga o que fazer
-- Use passo a passo apenas quando fizer sentido
-- Não use frases genéricas ou de atendimento
-
-INTERPRETAÇÃO:
-
-- Toda pergunta está no contexto de tratativas (EHA/RTS)
-- Entenda termos como:
-  "avaria", "vazando", "sem etiqueta", "duplicado", "proibido"
-
-O QUE SUA RESPOSTA DEVE TER:
-
-- O que é o problema
-- O que fazer na prática
-- Onde fazer (PDA ou Desktop), se aplicável
-- Destino do pacote
-
-QUANDO NECESSÁRIO:
-
-- Incluir alertas de segurança
-- Destacar pontos críticos (ticket, descarte, etc.)
-
-REGRAS:
-
-- NÃO inventar informação
-- NÃO fazer perguntas ao usuário
-- NÃO responder de forma genérica
-
-Se não encontrar a resposta:
-"Não encontrei essa informação na base."
-
 OBJETIVO:
 Ajudar o colaborador a agir corretamente na operação.
 """
