@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+# Secrets (CRÍTICO)
+.streamlit/secrets.toml
 __pycache__/
 *.py[codz]
 *$py.class
