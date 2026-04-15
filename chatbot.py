@@ -190,16 +190,6 @@ PERGUNTA:
         {"role": "assistant", "content": texto_resposta}
     )
 
-    # 🔽 AUTO SCROLL
-    st.markdown("""
-    <script>
-    window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: 'smooth'
-    });
-    </script>
-    """, unsafe_allow_html=True)
-
 # =========================
 # 🧹 CLEAR CHAT
 # =========================
@@ -207,50 +197,3 @@ if st.button("🧹 Limpar conversa"):
     st.session_state.lista_mensagens = []
     st.rerun()
 
-# =========================
-# ⬇️ BOTÃO FLUTUANTE
-# =========================
-st.markdown("""
-<style>
-#scrollBtn {
-    position: fixed;
-    bottom: 90px;
-    right: 25px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 999;
-    transition: all 0.3s ease;
-}
-
-#scrollBtn:hover {
-    transform: scale(1.1);
-    background: rgba(255,255,255,0.2);
-}
-
-#scrollBtn span {
-    font-size: 22px;
-    color: white;
-}
-</style>
-
-<div id="scrollBtn" onclick="scrollToBottom()">
-    <span>↓</span>
-</div>
-
-<script>
-function scrollToBottom() {
-    window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: 'smooth'
-    });
-}
-</script>
-""", unsafe_allow_html=True)
