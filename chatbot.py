@@ -13,6 +13,7 @@ from langchain_cohere import CohereEmbeddings
 # 🔐 GROQ CONFIG
 # =========================
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+
 MODEL_NAME = "llama-3.1-8b-instant"
 
 # =========================
@@ -140,22 +141,22 @@ if texto_usuario:
         # 🔎 RAG SEARCH
         if base_conhecimento:
             docs_relacionados = base_conhecimento.similarity_search(texto_usuario, k=4)
-            contexto_docs = "\n\n---\n\n".join([d.page_content for d in docs_relacionados])
+            contexto_docs = "\n\n".join([d.page_content[:1000] for d in docs_relacionados])
         else:
             contexto_docs = "Base de conhecimento vazia."
 
-        # 🧠 PROMPT FINAL (CORRIGIDO)
+        # 🧠 PROMPT FINAL
         prompt_final = f"""
-Você é Ariel, especialista em operações logísticas da Shopee Xpress (SoC), com foco em Tratativas (EHA) e Returns (RTS).
+Você é Ariel, um assistente especialista em processos logísticos da Shopee.
 
-CONTEXTO:
+Responda SOMENTE com base nos documentos abaixo.
+Se não encontrar a resposta, diga: "Não encontrei essa informação na base."
+
+DOCUMENTOS:
 {contexto_docs}
 
 PERGUNTA:
 {texto_usuario}
-
-OBJETIVO:
-Ajudar o colaborador a agir corretamente na operação.
 """
 
         # 🚀 GROQ REQUEST
@@ -164,7 +165,7 @@ Ajudar o colaborador a agir corretamente na operação.
             messages=[
                 {
                     "role": "system",
-                    "content": "Você é Ariel, especialista em logística da Shopee Xpress."
+                    "content": "Você é um assistente especialista em logística e processos da Shopee."
                 },
                 {
                     "role": "user",
@@ -189,9 +190,67 @@ Ajudar o colaborador a agir corretamente na operação.
         {"role": "assistant", "content": texto_resposta}
     )
 
+    # 🔽 AUTO SCROLL
+    st.markdown("""
+    <script>
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+    });
+    </script>
+    """, unsafe_allow_html=True)
+
 # =========================
 # 🧹 CLEAR CHAT
 # =========================
 if st.button("🧹 Limpar conversa"):
     st.session_state.lista_mensagens = []
     st.rerun()
+
+# =========================
+# ⬇️ BOTÃO FLUTUANTE
+# =========================
+st.markdown("""
+<style>
+#scrollBtn {
+    position: fixed;
+    bottom: 90px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+#scrollBtn:hover {
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.2);
+}
+
+#scrollBtn span {
+    font-size: 22px;
+    color: white;
+}
+</style>
+
+<div id="scrollBtn" onclick="scrollToBottom()">
+    <span>↓</span>
+</div>
+
+<script>
+function scrollToBottom() {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+    });
+}
+</script>
+""", unsafe_allow_html=True)
