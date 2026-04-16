@@ -1,0 +1,950 @@
+﻿[docnix_tipoDocumento]
+	[docnix_numeroCompleto]
+	  
+
+	[docnix_tituloDocumento]
+	     [docnix_versao]
+	Data:
+      [docnix_vigenciaDesde]
+	
+
+1. Objetivo
+Este documento tem como objetivo descrever o processo de tratamento de pedidos, abordando a identificação do problema que ocasionou a saída do pacote do fluxo de entrega e as medidas a serem tomadas para sua resolução.
+2. Campo de Aplicação
+Todos os SoCs da Shopee Xpress BR.
+3. Documentos de Referência
+POP-OPS-SOC-001 - PROCEDIMENTO SORTING CENTER (SoC) 
+IT-HSE-MEA-001 - Descarte de Avarias
+Política de Pacotes Permitidos SPX
+4. Regras Gerais de Segurança e Qualidade
+* É proibido correr dentro do SoC;
+* É proibido escrever na scuttle ou saca;
+* É proibido operar rampa niveladora sem autorização e treinamento;
+* É proibido descer ou pular da doca;
+* É proibido auxiliar o motorista a manobrar;
+* É obrigatório uso de EPI's;
+* É obrigatório retenção da chave para iniciar a atividade;
+* É permitido puxar lentamente 5 gaiolas vazias e não empurrar;
+* É permitido puxar lentamente 1 gaiola cheia por vez e não empurrar;
+* Não operar paleteira manual correndo;
+* Quando não estiver utilizando a paleteira/gaiola deve-se estacionar no local demarcado;
+* O manuseio de pallet deve ser feito em 2 pessoas.
+  
+
+5. Boas Práticas
+Boas práticas são passos que podem facilitar a execução do processo, melhorar o resultado ou garantir a segurança. Esses passos não são auditáveis.
+* Em caso de fanout repetido, posicionar em lados diferentes e distantes da esteira;
+* Orientação de pacotes na indução com a etiqueta virada para leitura no sentido do fluxo da esteira;
+* Demarcação no suporte de saca para saber até onde dobrar, garantindo o espaço necessário para fechar a saca com o lacre;
+* Empilhar tubetes dentro do suporte de sacas, organizando-os de forma estável, para garantir que sacas não tombem ou deslizem durante o processo de unitização.[a]
+Algumas regras de segurança por parte de HSE:
+* É importante inspecionar visualmente o equipamento antes de iniciar qualquer operação, com a finalidade de checar se existe alguma anormalidade (ruído, desalinhamento, vibração, etc);
+* Não trabalhar com roupas soltas. Todas as vestimentas superiores (camiseta, blusa, colete, etc.) devem estar ajustadas ao corpo;
+* O colete refletivo deve ser utilizado fechado e sem partes soltas, de forma a evitar qualquer risco de aprisionamento nas esteiras;
+* Cabelos devem estar presos em forma de coque e protegidos por touca;
+* Proibido o uso de adornos. Cordões de crachá devem ficar por dentro da camisa;
+* Os quadros ou painéis das máquinas e equipamentos devem ter porta de acesso fechada, sinalização de perigo de choque elétrico e restrição de acesso, em bom estado e desobstruídos;
+* Jamais transitar ou projetar parte do corpo abaixo do transportador.
+6. OpsID
+O OpsID é o cadastro individual do colaborador no sistema SPX que permite acesso aos processos sistêmicos através de um número e de uma senha padrão. Para mais informações, consultar a IT de Workstation.
+   1. Check-in na Workstation
+O auxiliar deve realizar o check-in na Workstation para executar o processo sistêmico corretamente. Para mais informações, consultar a IT de Workstation.
+   2. Check-out na Workstation
+O auxiliar deve realizar o check-ou na Workstation ao final da atividade. Para mais informações, consultar a IT de Workstation.
+7. Descrição do Processo
+O processo de tratativas é iniciado sempre que um pacote é retirado do fluxo normal de entrega por algum desvio ou inconsistência. Nesses casos, é realizada a identificação e análise da causa que motivou a interrupção, permitindo a definição e aplicação da ação corretiva adequada para que o pacote retorne ao fluxo ou tenha sua resolução concluída.
+Na área de Tratativas do SoC, o processo pode ser realizado de duas formas:
+* Recebimento e tratamento separados: 
+Os pacotes são inicialmente recebidos e triados. Após essa etapa, são direcionados para análise e resolução.
+* Recebimento e tratamento sistêmicos: 
+Cada pacote é recebido, analisado e tratado individualmente no momento da entrada, garantindo uma resolução mais ágil.
+Essa flexibilidade operacional permite que a equipe adapte o fluxo de trabalho de acordo com o volume de demanda e a complexidade dos casos.
+Para assegurar a continuidade operacional e a eficiência do processo, recomenda-se que não haja pacotes pendentes de tratamento nas trocas de turno.
+   3. Status Finalizador
+Pacotes com status finalizador são aqueles cujo pedido é interrompido e deixa de seguir o fluxo regular de entrega. Esses casos normalmente são identificados no momento do recebimento ou durante o processo de Packing, quando o pacote é bipado e o sistema sinaliza automaticamente o status finalizador. A partir dessa identificação, o sistema orienta o encaminhamento do volume para a área responsável, podendo ser:
+* Tratativas (EHA)
+* Returns (RTS)
+O tratamento pode ser realizado tanto via PDA quanto via Desktop, conforme o fluxo operacional da unidade. Abaixo estão listados os principais status finalizadores e seus respectivos códigos no sistema:
+
+
+Status
+	Motivo de tratativa no sistema
+	Lost / Perdido
+	11 – Status Lost (Status Finalizador)
+	Delivered / Entregue
+	12 – Status Delivered (Status Finalizador)
+	Cancelled / Cancelado
+	13 – Status Cancelled (Status Finalizador)
+	To Disposal / Para Descartar ou Disposed / Descartado
+	47 – Status Disposed (Status Finalizador)
+	Damaged / Avariado
+	53 – Avaria de Produto
+	Liquidation / Salvados
+	88 – Liquidation / Salvados
+[b]	
+      1. Como tratar no PDA
+1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+2. Na tela inicial do SPX, clicar em “Tratamento de Exceções”. 
+  
+
+3. Clicar em “EHA Single Inbound & Resolve”.
+  
+
+4. Bipar a etiqueta BR do pacote.
+  
+
+5. Selecionar o Motivo de Tratativa respectivo ao status finalizador conforme item Status Finalizador e clicar em “Confirmar”.
+  
+
+6. Clicar em “Resolvido Offline” e em “Confirmar” na janela de notificação. Alocar o pacote na gaiola de Returns.
+  
+  
+
+      2. Como tratar no Desktop
+1. No menu lateral esquerdo do SPX, clique em “Tratativa de Exceções”, depois em “Área de Tratativas” e por último em “Recebimento Unitário na Área de Tratativa”.
+  
+
+2. Bipar a etiqueta BR do pacote no campo “Recebimento na Área de Tratativa (SPX TN)”.  
+3. Selecionar o Motivo de Tratativa respectivo ao status finalizador conforme item Status Finalizador e apertar “Enter”.
+  
+
+   4. Clicar em “Offline Resolve” no campo de Ação e clicar em “Confirmar” na janela de confirmar.    
+   5. Alocar o pacote na gaiola de Returns.
+      1. Realocação LM_Hub
+A realocação ocorre quando um LM_Hub deixa de ser responsável pela entrega de determinado pacote, por motivos operacionais diversos. Nesses casos, o volume deve ser redirecionado para outro LM_Hub da Shopee Xpress Brasil, garantindo a continuidade do fluxo logístico.
+Por se tratar de uma tratativa que exige impressão de nova etiqueta, recomenda-se que o processo seja realizado preferencialmente via Desktop, onde é possível executar todas as etapas de forma completa.
+Alternativamente, o processo pode ser dividido da seguinte forma:
+      * PDA: realização do recebimento do pacote e registro do motivo da realocação;
+      * Desktop: conclusão da tratativa, incluindo a geração e impressão da nova etiqueta.
+Essa prática garante maior controle operacional e reduz riscos de inconsistências no redirecionamento do volume.
+      3. Processo de Realocação de LM_Hub (EHA/RTS)
+No fluxo de EHA/RTS, a realocação de um pacote entre LM_Hubs ocorre somente após a alteração do Hub de destino, realizada pelo Líder ou Analista de EHA/RTS no sistema.
+Após a validação e autorização da alteração, siga o procedimento abaixo, no SPX:
+      1. Acessar o SPX;
+      2. Clicar em “Tratamento de Exceções”;
+      3. Selecionar a opção “Atualizar Destino”;
+  
+
+      4. Informar se o pacote pertence ao fluxo Forward ou Return;
+      5. Bipar o BR do pacote;
+  
+
+      6. Após localizar o pedido, clicar em “Edit”;
+      7. Selecionar o novo HUB de destino (realocado);
+  
+
+      8. Clicar em “Confirmar” para concluir a alteração, após a confirmação, o pacote estará vinculado ao novo LM_Hub.
+      1. Como tratar no Desktop
+      1. O Líder ou Analista de RTS[c] deve realizar a alteração de LM_Hub conforme o item Processo de Realocação de LM_Hub (EHA/RTS). Os próximos passos só devem ser realizados após essa alteração.
+      2. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.[d]
+      3. No menu lateral esquerdo do SPX, clique em “Tratativa de Exceções”, depois em “Área de Tratativas” e por último em “Recebimento Unitário na Área de Tratativa”.
+  
+
+      4. Bipar a etiqueta BR do pacote no campo “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+      5. Clicar em “Print AWB”. Aguardar impressão da etiqueta com o novo LM_Hub e colar em cima da etiqueta anterior, de modo que o pacote permaneça com apenas uma etiqueta disponível para bipar.
+  
+
+      6. Alocar pacote na gaiola de processamento, para voltar para a operação.
+      1. Etiqueta Avariada
+Pacotes com etiqueta avariada, mas que ainda permitem a leitura visual do BR, podem ter a etiqueta reimpressa normalmente. Nos casos em que a etiqueta esteja ausente, mas o pacote contenha a chave de acesso da Nota Fiscal (NF), também é possível realizar a reimpressão. Para isso, a chave da NF deve ser utilizada para consultar o BR do pacote no sistema, possibilitando a geração de uma nova etiqueta.
+Abaixo exemplos de onde a chave da NF pode ser encontrada:
+  
+
+Como se trata de uma tratativa que exige impressão de etiqueta, recomenda-se que o processo seja realizado preferencialmente via Desktop, onde todas as etapas podem ser executadas de forma completa.
+Alternativamente, o fluxo pode ser dividido da seguinte forma:
+      * PDA: realizar o recebimento do pacote e registrar o motivo da tratativa;
+      * Desktop: concluir o processo com a geração e impressão da nova etiqueta.
+      1. Como tratar no Desktop
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. No menu lateral esquerdo do SPX, clique em “Tratativa de Exceções”, depois em “Área de Tratativas” e por último em “Recebimento Unitário na Área de Tratativa”.
+  
+
+      3. Bipar a etiqueta BR do pacote no campo “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+      4. Selecionar o Motivo de Tratativa “22 Etiqueta avariada” e clicar em “Enter”.
+  
+
+      5. A etiqueta será impressa automaticamente. Colar a nova etiqueta sobre a etiqueta anterior, garantindo que o pacote permaneça com apenas uma etiqueta disponível para bipar. Caso não haja etiqueta anterior, colar em qualquer área disponível da embalagem.
+  
+
+      6. Alocar pacote na gaiola de processamento.
+  
+
+Nota 01: Este processo se aplica quando apenas a etiqueta está avariada. Se houver necessidade de troca de embalagem, o caso se enquadra no item Avaria de Embalagem.
+      2. Como consultar o BR pelo AppSheet
+      1. O acesso ao App STN pode ser realizado tanto via PDA quanto via Desktop, por meio do App Sheet. Caso o usuário não possua acesso ao aplicativo, deve-se encaminhar um e-mail ao time de Inventário do SoC solicitando a liberação de acesso. Para mais informações sobre a utilização do App STN, recomenda-se consultar o material de treinamento correspondente.
+      2. No aplicativo STN, no campo “Resolução”, selecione a opção “Y” (Yes) para indicar resposta positiva ou “N” (No) para negativa. Para realizar consultas, deve-se sempre selecionar a opção “Y”.
+      3. Selecionar o SoC no campo “SOC” e bipar a chave da NF no campo “NF | CHAVE DE ACESSO”. Clicar em “Salvar”.
+  
+
+      4. Clicar em “OK” para confirmar a solicitação. O prazo de retorno é de 24 horas.
+  
+
+      5. Na aba “Consulta” é possível consultar pela chave da NF para saber se já foi  retornado o BR do pacote.
+  
+
+      6. Clicando em qualquer parte da linha da chave da NF consultada, vai abrir a tela mostrando o número do BR no campo “Número de Rastreio | BR” e a situação Resolvido no campo “SITUAÇÃO” caso já tenha sido retornado o BR do pacote.
+  
+
+      7. Com o BR será possível registrar o motivo em tratativas e imprimir a etiqueta, conforme item Como tratar no Desktop.
+      1. Como consultar o BR pelo site da Receita Federal
+      1. Pelo PDA, acessar o site de Portal da Nota Fiscal Eletrônica.
+      2. Bipar chave da NF no campo disponível, confirmar que é humano e clicar em “Continuar”.
+  
+
+      3. Selecionar aba “Informações Adicionais”, localizar campo “Pedido” e utilizar código informado como código BR para consulta no SPX, incluindo apenas o BR antes do número. 
+  
+
+
+
+      4. Com o BR será possível registrar o motivo em tratativas e imprimir a etiqueta, conforme item: Como tratar no Desktop.
+      1. Tratamento de Pequenas Avarias na Embalagem
+Pacotes que apresentam pequenas avarias na embalagem podem ser reparados sem a necessidade de substituição completa da embalagem.
+Nesses casos, é permitido realizar reparos simples, desde que a integridade do pacote seja preservada e o conteúdo permaneça devidamente protegido. Como exemplo, pequenos rasgos em sacos plásticos podem ser corrigidos por meio da aplicação controlada de fita adesiva (durex), evitando o uso excessivo de material.
+Após o reparo, é importante garantir que a embalagem esteja devidamente fechada e segura, permitindo que o pacote retorne ao fluxo logístico sem riscos ao transporte ou ao conteúdo.
+Do ponto de vista sistêmico, esse procedimento pode ser realizado tanto via PDA quanto via Desktop, de acordo com o fluxo operacional da unidade.
+      2. Como tratar no PDA
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. Na tela inicial do SPX, clicar em “Tratamento de Exceções”. 
+  
+
+      3. Clicar em “EHA Single Inbound & Resolve”.
+  
+
+      4. Bipar a etiqueta BR do pacote.
+  
+
+      5. Selecionar o Motivo de Tratativa “31 Conserto de pacote - Avaria de Embalagem” e clicar em “Confirmar”.
+  
+
+      6. Realizar o conserto.
+      7. Clicar em “Resolvido Offline” e em “Confirmar” na janela de notificação. 
+  
+  
+
+      8. Alocar o pacote na gaiola de Processamento.
+      1. Como tratar no Desktop
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. No menu lateral esquerdo do SPX, clique em “Tratativa de Exceções”, depois em “Área de Tratativas” e por último em “Recebimento Unitário na Área de Tratativas”.
+  
+
+      3. Bipar a etiqueta BR do pacote no campo “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+      4. Selecionar o Motivo de Tratativa “31 Conserto de pacote - Avaria de Embalagem” e apertar “Enter”.
+  
+
+      5. Realizar conserto.
+      6. Clicar em “Offline Resolve” e alocar pacote na gaiola de processamento.
+  
+
+Nota 01: Esse processo deve ser realizado para produtos que permanecem intactos, porém a embalagem está rasgada. Para mais informações sobre embalagem, consultar material de treinamento.
+      2. Avaria de Embalagem
+A reembalagem é necessária quando o produto permanece intacto, porém a embalagem original está excessivamente danificada, impossibilitando a realização de um reparo simples. Nessas situações, a embalagem deve ser substituída por uma nova.
+Para esse procedimento, o SoC disponibiliza flyers e caixas de diferentes tamanhos, que devem ser utilizados de acordo com o tipo e dimensão do produto, assegurando que ele esteja devidamente acomodado e protegido.
+Após a reembalagem, deve ser realizada a impressão e aplicação de uma nova etiqueta, garantindo a correta identificação do pacote.
+Por se tratar de uma tratativa que exige impressão de etiqueta, recomenda-se que o processo seja realizado preferencialmente via Desktop, onde todas as etapas podem ser executadas de forma completa.
+Alternativamente, o fluxo pode ser dividido da seguinte forma:
+      * PDA: realizar o recebimento do pacote e registrar o motivo da tratativa;
+      * Desktop: concluir o processo com a geração e impressão da nova etiqueta.
+      1. Como tratar no Desktop
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. No menu lateral esquerdo do SPX, clique em “Tratativa de Exceções”, depois em “Área de Tratativas” e por último em “Recebimento Unitário na Área de Tratativa”.
+  
+
+      3. Bipar a etiqueta BR do pacote no campo “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+      4. Selecionar o Motivo de Tratativa “30 Reembalagem + Impressão - Avaria de Embalagem” e apertar “Enter”.
+  
+
+      5. Reembalar pacote com o material mais adequado.
+      6. A etiqueta será impressa automaticamente. Colar a nova etiqueta sobre a etiqueta anterior, garantindo que o pacote permaneça com apenas uma etiqueta disponível para bipar. 
+      7. Alocar pacote na gaiola de processamento.
+  
+
+Nota 01: Esse processo deve ser realizado para produtos que permanecem intactos, porém a embalagem está rasgada. Para mais informações sobre embalagem, consultar material de treinamento.
+      3. Avaria Líquida[e]
+A Avaria Líquida ocorre quando produtos líquidos ou pastosos sofrem danos que resultam em vazamento, derramamento ou comprometimento do conteúdo, podendo causar contaminação de outros pacotes ou riscos operacionais durante o transporte, armazenagem ou manuseio, os produtos são classificados em tipos de produtos.
+
+
+Tipo de produto
+	Tipo de descarte
+	Tipo 1 - Químicos
+	Tintas, primers, vernizes, resinas, perfumes, águas de colônia, esmaltes, álcool, bebidas alcóolicas, solventes, diluentes e aerossóis
+	Tipo 2 - Alimentício
+
+
+	Conservas, óleos vegetais, cereais e itens secos, doces, biscoitos e bolachas, bebidas não alcóolicas, capsulas e vitaminas.
+	Tipo 3 - Cosméticos
+	Shampoo, condicionador, cremes de cabelo e corporais, pomadas, talcos, maquiagens, pesticidas, fungicidas e inseticidas.
+	Tipo 4 - Líquidos
+	Produtos de limpeza, sabão líquido e em pó, colas e massas brancas, óleo lubrificante, soro fisiológico, cloro e água sanitária
+	Tipo 5 - Volumosos
+	Itens plásticos, itens em PVC, itens em MDF/madeira, itens em inox, ferro ou metal, isopor, bicicleta e peças automotivas.
+	Tipo 6 - Cortantes
+	Itens em vidro, porcelana, espelhos, facas, agulhas, estiletes e ferramentas.
+	Tipo 7 - Sólidos
+	Lâmpadas, pilhas, baterias (pequenas), eletroeletrônicos, itens de informática e eletrodomésticos.
+	Tipo 8 - Isolados
+	Peróxido de hidrogênio (água oxigenada), alvejantes, cloro granulado/pó.
+	Tipo 9 - Gases inflamáveis
+	Acetileno, metano, propileno e GLP.
+	Tipo 10 - Gases não inflamáveis
+	Gás Hélio, oxigênio e hidrogênio.
+	Ao identificar uma de vazamento ou derramamento , o pacote deve ser imediatamente retirado do fluxo operacional. Em seguida, o time de Tratativas ou os Brigadistas do SoC devem ser acionados para realizar a contenção, limpeza e tratamento adequado da avaria.
+O procedimento deve seguir as orientações estabelecidas pelo time de Meio Ambiente, conforme descrito na instrução IT-HSE-MEA-001 – Descarte de Avarias, disponível no Docnix.
+Além do recebimento do pacote com registro do Motivo de Tratativa, é obrigatório realizar a abertura de um ticket para registro da ocorrência. Esse registro permite que o time de Order Management realize a alteração do status do pacote no sistema, garantindo o tratamento correto do pedido e o atendimento ao cliente.
+Para a abertura do ticket, devem ser anexadas as seguintes evidências:
+      * Imagem da etiqueta BR do pacote;
+      * Imagem do pacote evidenciando claramente a avaria líquida.
+Como se trata de uma tratativa que exige abertura de ticket com registro de imagens, recomenda-se que o processo seja realizado preferencialmente via PDA, permitindo o registro e envio das evidências de forma mais ágil.
+Alternativamente, o fluxo pode ser dividido da seguinte forma:
+      * Desktop: realizar o recebimento do pacote e registrar o Motivo de Tratativa;
+      * PDA: realizar a abertura do ticket, anexar as evidências e acompanhar a resolução do caso.
+      1. Como tratar no PDA
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. Na tela inicial do SPX, clicar em “Tratamento de Exceções”.
+  
+
+      3. Clicar em “EHA Single Inbound & Resolve”.
+  
+
+      4. Bipar a etiqueta BR do pacote.
+  
+
+      5. Selecionar o Motivo de Tratativa “55 Avaria Líquida” e clicar em “Confirmar”.
+  
+
+      6. Clicar em “Submeter Ticket”.
+  
+
+      7. Preencher o campo “Comentar*” informando que trata-se de avaria líquida. No ícone de câmera no campo “Anexo*” clicar para tirar foto: uma foto deve mostrar exclusivamente a etiqueta BR e outra deve registrar o produto avariado, preferencialmente com a etiqueta BR visível na mesma imagem. Clicar em “Enviar”.
+  
+
+      8. O ticket permanece disponível para consulta e acompanhamento no sistema, devendo ser monitorado pela equipe responsável até a sua resolução. O acompanhamento deve ser realizado via Desktop, acessando o caminho Ticket Management (Gerenciamento de Ticket) > Escalation Ticket > EHA Ticket no SPX. Nesse módulo, é possível verificar o status do chamado, acompanhar o andamento da tratativa e, quando necessário, inserir comentários ou informações adicionais antes da resolução final. A rotina de consulta e resolução dos tickets deve ser realizada diariamente, garantindo o correto acompanhamento das ocorrências e a atualização adequada do status dos pacotes no sistema.
+  
+
+      9. Após o registro da ocorrência e a realização das evidências fotográficas, o pacote deve ser descartado na bombona adequada, desde que as imagens estejam legíveis e o vazamento tenha sido completamente estancado. 
+É estritamente proibido descartar líquidos diretamente nas bombonas. Todo vazamento deve ser contido e estancado previamente antes de realizar o descarte do pacote.
+Essa medida tem como objetivo evitar a mistura de substâncias líquidas dentro da bombona, o que pode gerar reações químicas perigosas, vazamentos adicionais ou riscos à segurança operacional.
+Portanto, é fundamental garantir que não haja líquidos livres no momento do descarte, assegurando o cumprimento das normas de segurança e meio ambiente.
+  
+
+O descarte das bombonas são separados de acordo com o tipo de produto, como pode-se observar na imagem a seguir e consultar na planilha  Consulta Tipo de Avarias e acondicionamento:
+  
+
+      10. Para consultar a solução do ticket, bipar a etiqueta BR na tela de registro de Motivo de Tratativa. O Ticket (Motivo) estará Concluído, e o botão “Atualizar Status” estará disponível, no lugar do botão “Ver Ticket”. É necessário clicar em “Atualizar Status”.
+  
+
+      11. Clicar em “Confirmar” na tela de notificação.
+  
+
+      12. Pacote finalizado no SPX.
+  
+
+Nota 01: Caso exista empresa destinada para descarte no SOC, é obrigatório seguir a diretriz local. 
+Nota 02: A atualização de status dos pacotes no SPX será possível após a resolução do Ticket.
+Nota 03: É proibido descartar líquidos diretamente nas bombonas, todo vazamento precisa ser estancado antes de realizar o descarte. O objetivo é não misturar líquidos na bombona, o que pode gerar acidentes químicos. Para mais informações, acessar IT-HSE-MEA-001- Descarte de Avarias.
+Nota 04: Toda avaria líquida deve ser descartada imediatamente após a abertura do ticket.
+      4. Avaria de Produto
+A Avaria de Produto ocorre quando itens não líquidos ou não pastosos sofrem algum tipo de dano, podendo ser classificada como total ou parcial.
+      * Avaria de Produto Total: quando o produto está completamente danificado e inutilizável (ex.: espelho quebrado).
+      * Avaria de Produto Parcial: quando apenas parte dos itens de um conjunto está danificada (ex.: jogo com seis copos, sendo apenas um quebrado).
+Nesses casos, os pacotes podem ser alocados na gaiola de Tratativas disponível no SoC pelas equipes de Recebimento, Processamento ou Expedição. É importante que esses volumes permaneçam separados de outros motivos de tratativa, a fim de evitar novas avarias em outros pacotes ou embalagens.[f] Para orientações detalhadas sobre o descarte de produtos avariados, deve-se consultar a instrução IT-HSE-MEA-001 – Descarte de Avarias, disponível no Docnix.
+Além do recebimento do pacote com registro do Motivo de Tratativa, é necessário realizar a abertura de um ticket para registrar a ocorrência. Esse registro permite que o time de Order Management realize a alteração do status do pacote no sistema, garantindo o tratamento adequado do pedido e o atendimento ao cliente.
+Para abertura do ticket, devem ser anexadas as seguintes evidências:
+      * Imagem da etiqueta BR do pacote;
+      * Imagem do pacote evidenciando claramente a avaria do produto.
+Como se trata de uma tratativa que exige abertura de ticket com registro de imagens, recomenda-se que o processo seja realizado preferencialmente via PDA, permitindo o registro e envio das evidências de forma mais ágil.
+Alternativamente, o fluxo pode ser dividido da seguinte forma:
+      * Desktop: realizar o recebimento do pacote e registrar o Motivo de Tratativa;
+      * PDA: realizar a abertura do ticket, anexar as evidências e acompanhar a resolução do caso.
+      1. Como tratar no PDA
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. Na tela inicial do SPX, clicar em “Tratamento de Exceções”. 
+  
+
+      3. Clicar em “EHA Single Inbound & Resolve”.
+  
+
+      4. Bipar a etiqueta BR do pacote.
+  
+
+      5. Selecionar o Motivo de Tratativa “53 Avaria de Produto” e clicar em “Confirmar”.
+  
+
+      6. Clicar em “Submeter Ticket”.
+  
+
+      7. Preencher o campo “Comentar*” informando produto avariado. No ícone de câmera no campo “Anexo*” Clique para tirar fotos: uma da etiqueta BR e outra mostrando o produto avariado. Clicar em “Enviar”.
+  
+
+      8. O ticket permanece disponível para consulta e acompanhamento no sistema, devendo ser monitorado pela equipe responsável até a sua resolução. O acompanhamento deve ser realizado via Desktop, acessando o caminho Ticket Management (Gerenciamento de Ticket) > Escalation Ticket > EHA Ticket no SPX. Nesse módulo, é possível verificar o status do chamado, acompanhar o andamento da tratativa e, quando necessário, inserir comentários ou informações adicionais antes da resolução final. A rotina de consulta e resolução dos tickets deve ser realizada diariamente, garantindo o correto acompanhamento das ocorrências e a atualização adequada do status  dos pacotes no sistema.
+  
+
+      9. Em caso de avaria de produto perfurocortante, o descarte deve ser realizado logo após o envio do ticket, desde que as imagens estejam legíveis. Para casos de produtos que não sejam perfurocortantes e houver avaria total, o pacote deve ficar guardado em gaiola aguardando resolução do ticket e alteração do status. Casos de avaria parcial, o item avariado deve ser descartado logo após o envio do ticket, desde que as imagens estejam legíveis, e os demais alocados na gaiola para aguardar resolução do ticket e alteração de status, e então ser encaminhados para Returns. Caso necessário, a etiqueta BR pode ser reimpressa seguindo o ítem Etiqueta Avariada.
+  
+
+      10. Para consultar a solução do ticket, bipar a etiqueta BR na tela de registro de Motivo de Tratativa. O Ticket (Motivo) estará Concluído, e o botão “Atualizar Status” estará disponível, no lugar do botão “Ver Ticket”. É necessário clicar em “Atualizar Status”.
+  
+
+      11. Clicar em “Confirmar” na tela de notificação.
+  
+
+      12. O Ticket e a Tratativa estarão finalizados. Em caso de avaria de produto parcial, os produtos em bom estado devem ser direcionados para Returns.
+  
+
+Nota 01: Caso exista empresa destinada para descarte no SOC, é obrigatório seguir a diretriz local. 
+Nota 02: A atualização de status dos pacotes no SPX será possível após a resolução do Ticket.
+Nota 03: Em caso de Avaria de Produto Parcial, descartar apenas o produto quebrado e os itens sem avaria direcionar para Returns, onde o produto irá para Salvados. Para isso, é necessário que os pacotes estejam com etiqueta BR.
+      5. Embalagem Vazia
+Pacotes que apresentam apenas a embalagem, sem nenhum produto em seu interior, devem ser direcionados para tratativa, pois indicam uma possível ocorrência de extravio ou falha no processo logístico.
+Nesses casos, é necessário realizar o recebimento do pacote com registro do Motivo de Tratativa e também abrir um ticket para registrar a ocorrência. Esse registro permite que o time de Order Management realize a alteração do status do pacote no sistema, garantindo o tratamento adequado do pedido e o devido atendimento ao cliente.
+Para a abertura do ticket, devem ser anexadas as seguintes evidências:
+      * Imagem da etiqueta BR do pacote;
+      * Imagem da embalagem evidenciando que o pacote está vazio.
+Como se trata de uma tratativa que exige abertura de ticket com registro de imagens, recomenda-se que o processo seja realizado preferencialmente via PDA, permitindo o registro e envio das evidências de forma mais ágil.
+Alternativamente, o fluxo pode ser dividido da seguinte forma:
+      * Desktop: realizar o recebimento do pacote e registrar o Motivo de Tratativa;
+      * PDA: realizar a abertura do ticket, anexar as evidências e acompanhar a resolução do caso.
+      1. Como tratar no PDA
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. Na tela inicial do SPX, clicar em “Tratamento de Exceções”. 
+  
+
+      3. Clicar em “EHA Single Inbound & Resolve”.
+  
+
+      4. Bipar a etiqueta BR do pacote.
+
+
+  
+
+      5. Selecionar o Motivo de Tratativa “56 Embalagem vazia” e clicar em “Confirmar”.
+  
+
+      6. Clicar em “Submeter Ticket”.
+  
+
+      7. Preencher o campo “Comentar*” informando “Embalagem vazia”. No ícone de câmera no campo “Anexo*” clique para tirar fotos: uma da etiqueta BR e outra mostrando pacote sem produto. Clicar em “Enviar”.
+  
+
+      8. O ticket permanece disponível para consulta e acompanhamento no sistema, devendo ser monitorado pela equipe responsável até a sua resolução. O acompanhamento deve ser realizado via Desktop, acessando o caminho Ticket Management (Gerenciamento de Ticket) > Escalation Ticket > EHA Ticket no SPX. Nesse módulo, é possível verificar o status do chamado, acompanhar o andamento da tratativa e, quando necessário, inserir comentários ou informações adicionais antes da resolução final. A rotina de consulta e resolução dos tickets deve ser realizada diariamente, garantindo o correto acompanhamento das ocorrências e a atualização adequada do status dos pacotes no sistema.
+  
+
+      9. Descartar embalagem vazia após abertura do ticket desde que as fotos estejam legíveis e realizar atualização de status depois que o ticket for resolvido. O botão “Atualizar Status” estará disponível, no lugar do botão “Ver Ticket”, clicar em “Atualizar Status”.
+  
+
+      10. Clicar em “Confirmar” na tela de notificação.
+  
+
+      11. Pacote finalizado no SPX.
+  
+
+Nota 01: A embalagem vazia deve ser descartada logo após a abertura do ticket.[g]
+      6. Embalagem Inadequada
+A Embalagem Inadequada ocorre quando o pacote apresenta condições que não atendem aos padrões operacionais para seguir no fluxo logístico, verificar as embalagens adequadas na parte no site da Shopee.
+A Embalagem Inadequada pode ocorrer, por exemplo, nas seguintes circunstâncias:
+      * Pacote recusado pelo 3PL devido às condições da embalagem;
+      * Embalagem de outro marketplace contendo etiqueta da Shopee Xpress Brasil.
+Nesses casos, deve ser realizado o recebimento do pacote com registro do Motivo de Tratativa. Além disso, também é obrigatório abrir um “Escalation Ticket em EHA no SPX”, para que a ocorrência seja registrada e direcionada à área responsável.
+Sempre que possível, o pacote deve passar pelo processo de reembalagem, utilizando embalagens adequadas disponíveis no SoC. Caso não haja embalagem disponível que permita corrigir a situação, o pacote deve ser direcionado para o fluxo de Returns.
+Como se trata de uma tratativa que pode exigir impressão de nova etiqueta, recomenda-se que o processo seja realizado preferencialmente via Desktop, permitindo executar todas as etapas de forma completa.
+Alternativamente, o fluxo pode ser dividido da seguinte forma:
+      * PDA: realizar o recebimento do pacote e registrar o Motivo de Tratativa;
+      * Desktop: concluir a tratativa, incluindo a impressão da nova etiqueta, quando necessário.
+      1. Como tratar no Desktop
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. No menu lateral esquerdo do SPX, clique em “Tratativa de Exceções”, depois em “Área de Tratativas” e por último em “Recebimento na Área de Tratativa”.
+  
+
+      3. Bipar a etiqueta BR do pacote no campo “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+      4. Selecionar o Motivo de Tratativa “34 Embalagem Inadequada” e apertar “Enter”.
+  
+
+      5. Clicar em “Print AWB”. Aguardar impressão da etiqueta e colar na nova embalagem. Caso tenha uma etiqueta BR sobrepor a nova em sua totalidade.
+  
+  
+
+      6. Alocar pacote na gaiola de processamento.
+  
+
+Nota 01: Este processo se aplica quando é possível realizar a reembalagem. Caso contrário, o pacote deve ser direcionado para Returns.
+      7. Produtos Proibidos
+Alguns produtos são proibidos na plataforma da Shopee e, quando identificados no fluxo operacional, devem ser imediatamente barrados. Para verificar quais itens se enquadram nessa condição, deve-se consultar a Política de Produtos Proibidos e Restritos da Shopee.
+Ao identificar um produto proibido, é necessário realizar o recebimento do pacote com registro do Motivo de Tratativa. Além disso, também é obrigatório abrir um “Escalation Ticket em EHA no SPX”, para que a ocorrência seja registrada e direcionada à área responsável.
+Após esse registro, o pacote deve ser direcionado para o fluxo de Returns, seguindo os procedimentos operacionais estabelecidos.
+A abertura do ticket é necessária para que o time responsável possa analisar o desvio relacionado ao vendedor e realizar a alteração do status do pacote, garantindo o tratamento correto do pedido e o atendimento ao cliente.
+Responsáveis pela abertura de tickets:
+      * Analistas logísticos de FM Hub e LM Hub.[h]
+Responsáveis pela análise e aprovação (quando aplicável):
+      * Time de Order Management (OM)
+      * Time de Fraude
+O ticket deve ser aberto sempre que forem identificados pacotes com possíveis erros ou desvios relacionados ao vendedor.
+Para a abertura do ticket, devem ser anexadas as seguintes evidências:
+      * Imagem da etiqueta BR do pacote;
+      * Imagem do pacote evidenciando o produto proibido.
+Como se trata de uma tratativa que exige abertura de ticket com registro de imagens, recomenda-se que o processo seja realizado preferencialmente via PDA, permitindo o registro e envio das evidências de forma mais ágil. Para mais informações, acessar IT-HSE-MEA-001- Descarte de Avarias, disponível no Docnix. 
+Alternativamente, o fluxo pode ser dividido da seguinte forma:
+      * Desktop: realizar o recebimento do pacote e registrar o Motivo de Tratativa;
+      * PDA: realizar a abertura do ticket, anexar as evidências e acompanhar a resolução do caso.
+      1. Escalation Ticket em EHA no SPX
+      1. Na sua estação de trabalho, acesse o SPX e certifique-se de que o sistema esteja no modo “Português”.
+      2. No menu principal, clique em “Tratativa de Exceção”.
+      3. Em seguida, selecione “Área de Tratativas”.
+      4. Clique na opção “EHA Single Inbound & Resolve” e realize a entrada do pedido (bipando ou inserindo o BR).
+  
+
+      5. No campo de Motivo de Tratativa, selecione “Produto Proibido” e pressione a tecla ENTER para confirmar.
+  
+
+      6. Clique na opção “Submit Ticket” para iniciar a abertura do chamado.
+  
+
+      7. No campo Observação, insira uma descrição clara do desvio identificado. 
+      8. No campo Anexo, faça o upload de uma imagem do produto, evidenciando claramente a ocorrência.
+      9. Após preencher as informações e anexar a evidência, clique em “Enviar”.
+  
+
+      10. Após o envio, o ticket será criado no sistema e ficará pendente de análise pelo time de Order Management (OM). Caso o produto proibido seja confirmado após a validação, o status do pacote será alterado para “Disposed”. Nesse caso, o time deverá realizar o descarte do item, conforme o procedimento operacional estabelecido.
+  
+
+
+
+Nota 01: O prazo para análise e tratativa do ticket pelo time de Order Management (OM) é de até 72 horas.
+      2. Como tratar no PDA
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. Na tela inicial do SPX, clicar em “Tratamento de Exceções”.
+  
+
+      3. Clicar em “EHA Single Inbound & Resolve”.
+  
+
+      4. Bipar a etiqueta BR do pacote.
+  
+
+      5. Selecionar o Motivo de Tratativa “64 Produto proibido” e clicar em “Confirmar”.
+  
+
+      6. Clicar em “Submeter Ticket”.
+  
+
+      7. Preencher o campo “Comentar*” informando qual o tipo de produto. No ícone de câmera no campo “Anexo*” clique para tirar fotos: uma da etiqueta BR e outra mostrando o produto. Clicar em “Enviar”.
+  
+
+      8. O ticket permanece disponível para consulta e acompanhamento no sistema, devendo ser monitorado pela equipe responsável até a sua resolução. O acompanhamento deve ser realizado via Desktop, acessando o caminho Ticket Management (Gerenciamento de Ticket) > Escalation Ticket > EHA Ticket no SPX. Nesse módulo, é possível verificar o status do chamado, acompanhar o andamento da tratativa e, quando necessário, inserir comentários ou informações adicionais antes da resolução final. A rotina de consulta e resolução dos tickets deve ser realizada diariamente, garantindo o correto acompanhamento das ocorrências e a atualização adequada do status dos pacotes no sistema.
+  
+
+      9. Nesse momento, o pacote deve ser descartado na bombona adequada, desde que as imagens estejam legíveis.
+  
+
+      10. Para consultar a solução do ticket, bipar a etiqueta BR na tela de registro de Motivo de Tratativa. O Ticket (Motivo) estará Concluído, e o botão “Atualizar Status” estará disponível, no lugar do botão “Ver Ticket”. É necessário clicar em “Atualizar Status”.
+  
+
+      11. Clicar em “Confirmar” na tela de notificação.
+  
+
+      12. O Ticket e a Tratativa estarão finalizados.
+  
+
+Nota 01: O pacote deve ser descartado imediatamente após a abertura do ticket.
+      8. Pacote Fora de Perfil SPX
+Pacotes que apresentem qualquer um dos critérios abaixo são classificados como Fora de Perfil SPX, por estarem fora das diretrizes estabelecidas pela Shopee para realização da entrega:
+      * Maior lado acima de 125 cm;
+      * Soma de todos os lados (C+L+A), superior a 210 cm;[i]
+  
+
+      * Peso superior a 31 kg.
+Para mais informações, consulte a Política de Pacotes Permitidos SPX.
+Quando pacotes com essas características forem identificados durante o recebimento unitário (FM Driver), eles devem ser separados e encaminhados para a área de Tratativas. Nesses casos, a equipe deve realizar o registro do Motivo de Tratativa ER 99 – Pacote Fora de Perfil SPX e proceder com a abertura de um ticket no SPX, com o objetivo de formalizar a ocorrência e registrar a não conformidade com a política da empresa.
+Pacotes recebidos via Line Haul (recebimento massivo) ou que, eventualmente, forem identificados como Fora de Perfil na esteira devem seguir normalmente na malha.
+Na abertura do ticket, é imprescindível anexar fotos claras que comprovem a condição "Fora de Perfil", mostrando as medidas e/ou o peso do pacote, além do BR (etiqueta) correspondente.
+Todas as operações contam com gabaritos instalados para facilitar a identificação de pacotes que excedam os limites de dimensão e/ou peso estabelecidos, como no exemplo abaixo:
+
+
+  
+  
+
+Para pacotes fora de perfil por dimensão, as fotos devem ser tiradas de forma que o pacote esteja posicionado sobre a bancada, alinhado com o gabarito, evidenciando a medição. Podem ser necessárias mais de uma foto, a fim de capturar as três dimensões (comprimento, largura e altura), utilizadas na soma total dos lados. 
+Para pacotes fora de perfil por peso, a foto deve mostrar claramente o pacote sobre a balança, com o peso visível e o BR correspondente.
+Exemplos de fotos para ticket para pacotes fora de perfil por violação de dimensão permitida:
+  
+  
+  
+  
+
+Exemplos de fotos para ticket para pacotes fora de perfil por violação do peso permitido:
+  
+  
+
+A abertura do ticket deve ser feita exclusivamente via PDA, pois é necessário o envio das imagens como evidência para análise e aprovação.
+      3. Como tratar no PDA
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. Na tela inicial do SPX, clicar em “Tratamento de Exceções”. 
+  
+
+      3. Clicar em “EHA Single Inbound & Resolve”.
+  
+
+      4. Bipar a etiqueta BR do pacote.
+  
+
+      5. Selecionar o Motivo de Tratativa “99 Pacote fora de perfil SPX" e clicar em “Confirmar”.
+  
+
+      6. Tirar fotos no campo disponível na abertura do ticket e comentar o motivo pelo qual o pacote está fora de perfil SPX, seja por peso ou dimensão.
+  
+
+      7. Clicar em “Resolvido Offiline” e em “Confirmar” na janela de notificação. Alocar o pacote na gaiola de Returns.
+  
+  
+
+Nota 01: Na abertura de ticket para pacotes de FM Driver, não é necessário aguardar a resolução para direcioná-los ao fluxo de Salvados.
+      9. Realocação 3PL
+A realocação de 3PL ocorre quando o transportador parceiro devolve o pacote por não conseguir concluir a etapa de transporte ou entrega. Essa situação pode ocorrer, por exemplo, quando o parceiro não realiza entregas no endereço do cliente ou quando não é possível receber ou validar o Conhecimento de Transporte Eletrônico (CT-e).
+O CT-e é um documento fiscal digital obrigatório no Brasil, emitido e armazenado eletronicamente, que formaliza a prestação de serviços de transporte de cargas em qualquer modal.
+Como se trata de uma tratativa que exige a impressão de uma nova etiqueta, recomenda-se que todo o processo seja realizado via Desktop, permitindo a execução completa das etapas necessárias. Alternativamente, é possível utilizar o PDA para realizar o recebimento do pacote e o registro do Motivo de Tratativa, deixando o Desktop apenas para a etapa de resolução, incluindo a impressão da nova etiqueta.
+Antes de prosseguir com o processo, o Líder ou Analista de EHA deve realizar a alteração do 3PL, conforme descrito no item Processo de realocação de 3PL. As etapas seguintes somente devem ser executadas após a conclusão dessa alteração no sistema.
+      4. Como tratar no Desktop
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. No menu lateral esquerdo do SPX, clique em “Tratativa de Exceções”, depois em “Área de Tratativas” e por último em “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+      3. Bipar a etiqueta BR do pacote no campo “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+      4. Clicar em “Print AWB”. Aguardar a impressão da etiqueta com o novo 3PL e colocar em cima da etiqueta anterior, de modo que o pacote permaneça com apenas uma etiqueta disponível para bipar.
+  
+  
+
+      5. Alocar pacote na gaiola de processamento.
+  
+
+      1. Processo de realocação de 3PL
+O processo de realocação de 3PL em EHA só acontece após a alteração do 3PL realizada pelo Líder ou Analista da área. Para isso, siga o procedimento abaixo:
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. No menu lateral esquerdo do SPX, clique em “Realocação de Pedido”.
+  
+
+      3. Clicar em “Criar Tarefa de Recomendação”.
+  
+
+      4. Selecionar “Single Action” se for apenas um pacote. Selecionar “Batch Action” se for mais de um pacote. No caso do exemplo, selecionamos Single Action. Clicar em “Confirmar”.
+  
+
+      5. Bipar etiqueta BR do pacote no campo “SPX TN (Número de rastreamento)”.
+  
+
+      6. Clicar em “Realocar” no canto superior direito e depois em “determinar” na caixa de confirmação.
+  
+  
+
+Nota 01: Caso não seja possível realizar a realocação para um novo 3PL, direcione o pacote para Returns.
+      10. Reimpressão de Etiquetas Desatualizadas
+Este processo tem como objetivo garantir que pacotes com informações de destino desatualizadas, decorrentes de alterações na malha logística, sejam corretamente reetiquetados antes de seguirem para o fluxo operacional.
+A reetiquetagem será solicitada automaticamente quando um pacote que sofreu alteração na malha for bipado no recebimento unitário (com ou sem assisted sorting) e no processamento. 
+  
+  
+
+Nesses casos, o sistema exibirá uma mensagem automática informando que o pacote deve ser direcionado para a área de tratativas para reimpressão da etiqueta BR. Após a reetiquetagem, o pacote deve ser devolvido à esteira para seguir normalmente o fluxo de operação.
+Situações em que a reimpressão de etiqueta é exigida:
+      * Atualização da malha logística que faz com que o CEP do destinatário deixe de ser atendido pela malha SPX, passando a ser operado por uma transportadora 3PL.
+      * Alteração da estação de destino final do pacote.
+      * Atualização das estações intermediárias previstas na rota do pacote.
+      * Postagem realizada pelo vendedor em um ponto de coleta diferente do originalmente previsto.
+      * Desvio logístico, como envio do pacote para uma estação diferente da planejada (mis-routing).
+Por ser uma tratativa que requer impressão de etiqueta, deve-se utilizar o Desktop para fazer todo o processo.
+      5. Como tratar no Desktop
+Sempre que o sistema indicar a necessidade de reetiquetagem por meio de uma follow-up action (ação de acompanhamento), o colaborador deverá:
+      1. Bipar o pacote na tela de consulta.
+      2. O sistema exibirá uma follow-up action (ação de acompanhamento) com a instrução “Print AWB”.
+      3. Clicar em “Print AWB” para gerar a nova etiqueta BR atualizada.
+      4. Colar a nova etiqueta sobre a etiqueta antiga, garantindo que esteja totalmente visível e legível.
+      5. Encaminhar o pacote novamente para o fluxo de processamento.
+      1. Suspeita de Duplicidade
+A Suspeita de Duplicidade ocorre quando o sistema indica que um pacote já foi registrado em alguma etapa do processo no SoC, porém não é localizado outro volume com a mesma etiqueta para confirmação da duplicidade.
+Nesses casos, o pacote deve ser consultado na tela de consulta de pedidos. Caso o status seja diferente de “Status Finalizador” e “SOC_Received”, o volume deve ser fisicamente alocado na gaiola de Quarentena.
+O pacote deve permanecer em monitoramento diário por um período de até 7 dias. Durante esse prazo:
+      * Se houver alteração de status para “Delivered”, deve-se seguir o fluxo definido para Duplicidade Confirmada;
+      * Caso não ocorra alteração de status após 7 dias, o pacote deve ser direcionado para a área de processamento do SoC, retornando ao fluxo operacional.
+Esse procedimento garante maior controle sobre possíveis inconsistências sistêmicas, evitando tratativas indevidas ou perdas operacionais.
+  
+
+      2. Duplicidade Confirmada
+A Duplicidade Confirmada ocorre quando uma Suspeita de Duplicidade permanece por mais de 7 dias em quarentena sem alteração de status, ou quando são identificados dois ou mais pacotes com a mesma etiqueta em mãos.
+No caso de existência de dois pacotes com etiquetas idênticas, o procedimento deve ser realizado da seguinte forma:
+      * Um dos pacotes deve seguir normalmente o fluxo de processamento;
+      * O outro pacote deve permanecer em quarentena, aguardando atualização de status no sistema.
+O pacote mantido em quarentena deve permanecer em monitoramento até que seu status seja atualizado para:
+      * Delivered;
+      * Status de devolução (em casos de insucesso na entrega).
+Somente após essa atualização de status é que deve ser realizado o tratamento sistêmico do pacote que permaneceu em quarentena. Esse procedimento garante maior controle e evita inconsistências no sistema, assegurando a correta tratativa de volumes duplicados.
+Esse processo pode ser realizado tanto via PDA quanto via Desktop, de acordo com o fluxo operacional da unidade.
+      6. Como tratar no PDA
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. Na tela inicial do SPX, clicar em “Tratamento de Exceções”. 
+  
+
+      3. Clicar em “EHA Single Inbound & Resolve”.
+  
+
+      4. Bipar a etiqueta BR do pacote.
+  
+
+      5. Selecionar o Motivo de Tratativa “28 Duplicidade Confirmada” e clicar em “Confirmar”.
+  
+
+      6. Clicar em “Resolvido Offline” e em “Confirmar” na janela de notificação. 
+  
+  
+
+      7. Alocar o pacote na gaiola de Returns.
+      1. Como tratar no Desktop
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. No menu lateral esquerdo do SPX, clique em “Tratativa de Exceções”, depois em “Área de Tratativas” e por último em “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+      3. Bipar a etiqueta BR do pacote no campo “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+      4. Selecionar o Motivo de Tratativa “28 Duplicidade Confirmada” e apertar “Enter”.
+  
+
+      5. Clicar em “Offline Resolve” e alocar o pacote na gaiola de Returns.
+  
+
+      3. Interceptação da Receita Federal
+A Receita Federal pode interceptar pacotes a qualquer momento durante o fluxo logístico. Quando isso ocorre, o sistema atualiza o status do pacote, direcionando-o automaticamente para a área de Tratativas durante as etapas de Recebimento ou Processamento.
+Ao ocorrer uma interceptação, uma notificação é registrada no histórico de rastreio do pacote, e um erro é exibido no momento do bip no SPX. Para confirmar a ocorrência, é necessário consultar o pacote no SPX e verificar se consta no histórico de eventos a notificação “Requisitado para fiscalização”.
+Após a confirmação, deve-se acessar a planilha “Check Receita Federal” e:
+      * Verificar a coluna “Situação”, para confirmar se o pacote está, de fato, interceptado;
+      * Consultar a coluna “Ação”, que indicará se o pacote deve ser direcionado para outro SoC ou permanecer na unidade atual para fiscalização pela Receita Federal.
+Como essa tratativa pode exigir abertura de ticket com registro de imagens, recomenda-se que o processo seja realizado preferencialmente via PDA, permitindo maior agilidade no registro das evidências.
+Alternativamente, o fluxo pode ser dividido da seguinte forma:
+      * Desktop: realizar o recebimento do pacote e registrar o Motivo de Tratativa;
+      * PDA: realizar a abertura do ticket, anexar evidências (quando aplicável) e acompanhar a resolução do caso.
+      1. Como tratar
+      1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+      2. Ao bipar o pacote, verificar se é exibido um erro e consultar o histórico de rastreio no SPX para confirmar se há a notificação “Requisitado para fiscalização”.
+  
+
+      3. Caso a notificação esteja presente, acessar a planilha Check Receita Federal.
+      4. Verificar a coluna “Situação” se apresenta o texto “Solicitação de interceptação - Receita Federal”  para confirmar se o pacote está, de fato, interceptado.
+  
+      5. Consultar a coluna “Ação” para identificar se o pacote deve ser direcionado para outro SoC ou permanecer no SoC atual até a realização da fiscalização pela Receita Federal.  
+      6. Seguir com a ação recomendada indicada na planilha Check Receita Federal.
+      7. Caso o pacote tenha que ser direcionado para outra operação SPX, proceder da seguinte forma:
+         1. Acomodar pacotes no unitizador mais adequado conforme quantidade de pacotes.
+         2. Editar identificação padrão informando SoC origem (atual), SoC destino, quantidade de pacotes e data vigente. 
+  
+
+         3. Colar identificação no unitizador ou caixa de transferência (Vermelha).
+         4. Direcionar unitizador para a expedição, informando ao líder de expedição para priorizar o carregamento na próxima LH.
+
+
+         8. Pacotes que devem aguardar a fiscalização da Receita Federal:
+         1. Adicionar pacote em uma gaiola lacrada/trancada e identificada de “Retenção da RF”.
+         9. Após a fiscalização os pacotes podem seguir dois processos:
+         1. Pacotes não serão retirados pela RF: 
+         * Consultar status no SPX e em caso de status finalizador, seguir o processo do item Status Finalizador. Caso o status não seja finalizador, direcione os pacotes para Returns.
+         1. Pacotes retirados pela RF:
+         * Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+         * Na tela inicial do SPX, clicar em “Tratamento de Exceções”. 
+  
+
+         * Clicar em “EHA Single Inbound & Resolve”.
+  
+
+         * Bipar a etiqueta BR do pacote.
+  
+
+         * Selecionar o Motivo de Tratativa “62 Pacote retido pela Receita Federal / Investigation” e clicar em “Confirmar”.
+         * Clicar em “Submeter Ticket”.
+         * Preencher o campo “Comentar*” com “Pacote retido pela Receita Federal”. 
+         * Na imagem, tirar foto ou digitalizar o Termo de Retenção apresentado pela RF evidenciando a retirada dos pacotes. 
+         * Clicar em “Enviar”.
+         * Clicar em “Atualizar Status” para finalizar o ticket e alterar o status do pacote.
+                  
+         * Clicar em “Confirmar” na tela de notificação.
+          
+         * O Ticket e a tratativa estarão finalizados.
+  
+
+         4. Pacote sem etiqueta ou etiqueta de outro Marketplace
+Pacotes que não possuem etiqueta ou que apresentam etiqueta de outro marketplace devem ser considerados como não identificáveis dentro do fluxo da operação.
+
+
+Nesses casos, o pacote deve ser direcionado para a área de Returns, onde deverá seguir o processo de Salvados, conforme os procedimentos operacionais estabelecidos.
+         5. Erro Operacional
+O Erro Operacional ocorre quando um pacote é encaminhado indevidamente para a área de Tratativas, sem que exista, de fato, qualquer inconsistência ou necessidade de intervenção.
+Nesses casos, após a verificação de que não há tratativa aplicável, o pacote deve ser reintegrado ao fluxo operacional normal, seguindo para a etapa correspondente do processo logístico.
+É importante garantir a correta identificação desse cenário, evitando retrabalho e assegurando a fluidez da operação.
+         2. Como tratar no PDA
+         1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+         2. Na tela inicial do SPX, clicar em “Tratamento de Exceções”. 
+  
+
+         3. Clicar em “EHA Single Inbound & Resolve”.
+  
+
+         4. Bipar a etiqueta BR do pacote.
+  
+
+         5. Selecionar o Motivo de Tratativa “26 Erro Operacional (Pacote sem necessidade de tratativa)” e clicar em “Confirmar”.
+  
+
+         6. Clicar em “Resolvido Offline” e em “Confirmar” na janela de notificação. 
+  
+  
+
+         7. Alocar o pacote na gaiola de processamento.
+         1. Como tratar no Desktop
+         1. Realizar login no SPX e check-in na Workstation conforme item Check-in na Workstation.
+         2. No menu lateral esquerdo do SPX, clique em “Tratativa de Exceções”, depois em “Área de Tratativas” e por último em “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+         3. Bipar a etiqueta BR do pacote no campo “Recebimento na Área de Tratativa (SPX TN)”.
+  
+
+         4. Selecionar o Motivo de Tratativa “26 Erro Operacional [Pacote sem necessidade de tratativa - Colocar na Gaiola de retorno de operações” e apertar “Enter”.
+  
+
+         5. Clicar em “Offline Resolve” e alocar o pacote na gaiola de processamento.
+  
+
+         8. Anexos
+Sugestão Layout Tratativas
+Política de Produtos Proíbidos e Restritos
+         9. Termos e Definições
+Termo
+	Definição
+	Processamento
+	Área responsável pelo Sorting e Packing dos produtos.
+	Sorting (Processamento)
+	Área responsável por sortear os pedidos de acordo com o destino.
+	Packing (Processamento)
+	Área responsável por unitizar física e sistemicamente os pedidos para expedição.
+	Expedição
+	Área responsável por carregar os veículos de acordo com o destino.
+	Buffer
+	Área de armazenamento temporário de unitizadores durante sua transferência entre diferentes locais do galpão.
+	Scuttle
+	Estrutura de papelão retangular com abertura frontal, utilizada para transportar pacotes.
+	Gaiola
+	Estrutura de ferro quadrada com portas de abertura frontal, utilizadas para armazenar e transportar pacotes dentro do galpão.
+	SoC
+	Sigla para Sorting Center referente às instalações logísticas da Shopee
+	SPX
+	Sistema utilizado na operação que registra todas as tarefas, desde o recebimento até a expedição dos pacotes.
+	Workstation/WS
+	Posto de trabalho.
+	PDA
+	Personal Digital Assistant, utilizado para bipar os pedidos durante os processos.
+	TO
+	Track Order, etiqueta utilizada para identificar os unitizadores.
+	Unitizador
+	Saca, palette ou gaylord/scuttle. Qualquer objeto utilizado para unir pedidos para um mesmo destino, respeitando seus limites.
+	FM_Hub
+	Sigla para First Mile Hub. Primeira Milha, lugar onde é feito o processo de coleta no Seller.
+	LM_Hub
+	Sigla para Last Mile Hub. Última Milha, lugar onde é feito o processo de distribuição para entrega ao cliente.
+	3PL
+	“Third Party Logistics”: Logísticos Terceirizados (transportadoras).
+	Missorting
+	Erro operacional ocasionado pelo envio do pacote para o destino equivocado.
+	CT-e
+	O CT-e é um documento fiscal digital obrigatório no Brasil, emitido e armazenado eletronicamente, que formaliza a prestação de serviços de transporte de cargas em qualquer modal.
+	
+
+
+
+
+
+
+
+         10. Atualizações
+Data
+	Revisão
+	Atualização
+	05/07/2024
+	01
+	         * Versão inicial DocNix.
+	02/12/2024
+	02
+	         * Revisão geral da IT.
+	19/12/2024
+	03
+	         * Incluído passo 5.17 na IT;
+         * Completado nota 01, passo 5.10 com informações a mais sobre o processo;
+         * Acrescentado passos 5.1 e 5.18 de Check-in e Check-out da WS.
+	05/05/2025
+	04
+	         * Atualização de layout e ajuste de margens.
+         * Inclusão de regras no item 4.
+         * Inclusão de passo a passo de consulta de NF no App STN e no site da RF no item 5.4.
+         * Remoção do item 5.16 Pacote com Status Return por inutilização do processo.
+         * Remoção do item de Layout, mantido no item Anexo.
+         * Alteração de processo no item 5.3 Realocação de LM_Hub.
+         * Alteração de processo no item 5.14 Suspeita de Duplicidade.
+         * Alteração de processo no item 5.15 Duplicidade Confirmada.
+         * Alteração de periodicidade de consulta de tickets e que devem ser consultados pelo Desktop (em todos os itens que exigem abertura de ticket para a tratativa).
+         * Atualização de imagens e prints.
+         * Revisão e otimização de textos.
+	23/07/2025
+	05
+	         * Inclusão de especificação do material da bota de segurança no item 4. 
+         * Alteração no texto no item 5.2.
+         * Alteração de processo no item 5.3.1, com exclusão da necessidade de registro do motivo.
+         * Alteração no nome da Exception Reason nos itens 5.5.1.5, 5.7.1.5, 5.8.1.5, 5.9.1.5, 5.10.1.4.
+         * Inclusão do caminho de consulta de ticket no item 5.7.1.8, 5.8.1.8, 5.9.1.8, 5.11.1.
+         * Atualização do processo no item 5.12.
+         * Alteração de processo do item 5.13.1, com exclusão da necessidade de registro do motivo.
+         * Inclusão do processo no item 5.14.
+         * Atualização do processo no item 5.16.
+         * Inclusão de imagens no descritivo do processo 5.19.1.
+	01/09/2025
+	06
+	         * Alteração do item 5.4.1.5. - FuA automática.
+         * Alteração do item 5.6.1.6. - FuA automática.
+         * Alteração no item 5.12, atualizando os critérios de volumoso: soma dos lados de 205cm para 210cm.
+         * Alteração na nota 4 do item 5.1.6.
+         * Inclusão de status finalizador no item 5.2.
+         * Alteração no item 4.
+         * Criação do item 5, Boas Práticas.
+         * Criação do item 6.1, Criação de OpsID.
+         * Criação do item OpsID
+         * Criação do item Processo de Realocação de LM_Hub (EHA/RTS)
+         * Alteração no item Avaria Líquida
+         * Inclusão do item Escalation Ticket em EHA no SPX
+	         11. Validação
+Elaborado por: 
+Nome: Marília Alves
+Cargo: Associate Operations - PTS
+Revisado por:
+Nome:  Juliana Aleixo Schmidt
+Cargo: Supervisor Operations - PTS Regional
+Aprovado por:
+Nome: Juliana Aleixo Schmidt
+Cargo: Supervisor Operations - PTS Regional
+
+
+Nome: Guilherme Sartori
+Cargo: Gerente Regional
+Nome: Alvaro Rueda
+Cargo: Gerente Regional
+Página 
+[a]Boas práticas não condizentes com a atividade realizada na área de tratativas.
+[b]Status Novo Liquidation código 94, mas que ainda não substitui o 88 nos casos de liquidation confirmado.
+[c]Temos esse cargo na operação? Existe uma forma mais genérica para não travar o processo?
+[d]No desktop e pelo SPX, a workstation ainda é necessária?
+[e]@barbara.oliveira@shopee.com Validar a parte de meio ambiente que é citada na IT de tratativas
+[f]Falando de não líquidos, entrariam junto com avarias sistêmicas, não teria o risco de avariar outros pacotes.
+[g]Item 7.8 pede para acompanhar a resolução do ticket após a abertura, o descarte não pode influenciar em alguma tratativa posterior?
+[h]Os auxiliares e líderes do SoC é que nesses casos devem abrir os tickets.
+[i]As medidas permitidas estão diferentes do que consta na política para limite máximo, soma dos lados e peso
