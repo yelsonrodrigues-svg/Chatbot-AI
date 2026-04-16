@@ -6,4 +6,3 @@ langchain-cohere
 faiss-cpu
 pypdf
 cohere
-shutil
