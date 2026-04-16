@@ -1,6 +1,8 @@
 ========================================================
 [TEMA]
 Tratativas de Pacotes - EHA & Returns
+Pacotes que devem seguir para EHA, são pacotes que por algum motivo apresentaram problemas sistêmicos impactando em seu fluxo natural.
+
 ========================================================
 
 [INTENÇÃO]
