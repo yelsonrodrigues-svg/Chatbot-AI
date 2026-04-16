@@ -43,7 +43,7 @@ def normalizar_texto(texto: str) -> str:
     texto = re.sub(r"\s+", " ", texto)
     return texto
 
-def eh_saudacao(texto: str) -> bool:
+def classificar_mensagem(texto: str) -> str:
     texto_norm = normalizar_texto(texto)
 
     saudacoes_exatas = {
@@ -63,23 +63,36 @@ def eh_saudacao(texto: str) -> bool:
         "hi"
     }
 
-    return texto_norm in saudacoes_exatas
+    if texto_norm in saudacoes_exatas:
+        return "SAUDACAO"
 
-def eh_conversa_curta(texto: str) -> bool:
-    texto_norm = normalizar_texto(texto)
+    palavras_operacionais = [
+        "pacote", "pacotes", "avaria", "avariado", "motivo", "fluxo", "returns",
+        "return", "tratativa", "tratativas", "pda", "desktop", "br", "soc",
+        "eha", "etiqueta", "sem etiqueta", "sem identificação", "identificação",
+        "recebimento", "reversa", "3pl", "lm_hub", "fm_hub", "ticket", "nf",
+        "realocação", "duplicidade", "receita federal", "produto proibido",
+        "embalagem", "erro operacional", "offline resolve", "check-in", "check-out"
+    ]
 
-    conversas_curtas = {
-        "quem é você",
-        "o que você faz",
-        "como você funciona",
-        "me ajuda",
-        "pode me ajudar",
-        "preciso de ajuda",
-        "quais assuntos você responde",
-        "quais perguntas você responde"
-    }
+    gatilhos_pergunta = [
+        "como", "o que", "qual", "quais", "quando", "onde", "por que",
+        "porque", "pra onde", "para onde", "devo", "faço", "fazer"
+    ]
 
-    return texto_norm in conversas_curtas
+    if "?" in texto_norm:
+        return "PERGUNTA_OPERACIONAL"
+
+    if any(p in texto_norm for p in palavras_operacionais):
+        return "PERGUNTA_OPERACIONAL"
+
+    if any(g in texto_norm for g in gatilhos_pergunta) and len(texto_norm.split()) >= 3:
+        return "PERGUNTA_OPERACIONAL"
+
+    if len(texto_norm.split()) >= 5:
+        return "PERGUNTA_OPERACIONAL"
+
+    return "CONVERSA"
 
 # =========================
 # 📚 FUNÇÃO AUXILIAR LOADERS
@@ -208,64 +221,34 @@ def buscar_contexto(base_conhecimento, pergunta, k=4):
 # =========================
 def montar_prompt(contexto_docs, texto_usuario, tipo_mensagem):
     return f"""
-Você é Ariel, um assistente virtual especialista em processos logísticos da Shopee, com foco em EHA e Returns.
+Você é Ariel, um assistente virtual da Shopee especializado em EHA e Returns.
 
-Seu comportamento depende do tipo da mensagem do usuário.
+Seu objetivo é responder de forma natural, útil e confiável.
 
-=========================
-TIPO DA MENSAGEM
-=========================
+PRIORIDADES DE COMPORTAMENTO:
+1. Entenda a intenção do usuário antes de responder.
+2. Se for uma saudação simples, responda de forma natural e breve.
+3. Se for uma pergunta operacional sobre processos, regras, tratativas, motivos, avarias, PDA, desktop, BR, Returns, EHA ou operação logística, use os documentos recuperados como fonte principal.
+4. Quando a resposta operacional estiver claramente apoiada nos documentos, responda de forma objetiva e fácil de entender.
+5. Quando não houver base suficiente para responder uma pergunta operacional, diga exatamente:
+"Não encontrei essa informação na base."
+
+DIRETRIZES IMPORTANTES:
+- Responda sempre em português do Brasil.
+- Não invente processos, regras, menus ou decisões operacionais.
+- Você pode reescrever o conteúdo de forma mais clara e natural.
+- Não responda com apresentação do assistente quando o usuário fizer uma pergunta operacional.
+- Evite começar toda resposta com "Olá" ou se apresentar, exceto quando for realmente uma saudação.
+- Evite listas numeradas ou opções 1, 2, 3, a menos que isso ajude muito e esteja claramente apoiado no contexto.
+- Se a mensagem for uma dúvida, problema, pergunta de processo ou frase com contexto operacional, trate como pergunta operacional.
+
+TIPO DA MENSAGEM:
 {tipo_mensagem}
 
-=========================
-REGRAS GERAIS
-=========================
-1. Responda sempre em português do Brasil.
-2. Seja claro, objetivo e natural.
-3. Nunca invente regras, processos, fluxos, menus ou opções que não estejam no contexto.
-4. Nunca crie listas numeradas, opções 1/2/3, ou passo a passo, a menos que isso esteja explicitamente presente no contexto.
-5. Se a pergunta for de processo operacional, responda somente com base nos documentos recuperados.
-6. Se não houver informação suficiente para responder uma pergunta de processo, responda exatamente:
-"Não encontrei essa informação na base."
-
-=========================
-REGRAS PARA SAUDAÇÕES E CONVERSAS CURTAS
-=========================
-Se a mensagem do usuário for apenas uma saudação ou conversa curta, como:
-- oi
-- olá
-- bom dia
-- boa tarde
-- boa noite
-- tudo bem
-- quem é você
-- o que você faz
-- pode me ajudar
-
-Então:
-- responda de forma natural e simpática
-- apresente brevemente que você ajuda com processos de EHA e Returns
-- não diga "Não encontrei essa informação na base"
-- não force uso dos documentos para isso
-
-=========================
-REGRAS PARA PERGUNTAS OPERACIONAIS
-=========================
-Se a mensagem do usuário for uma pergunta sobre processo, regra, motivo, tratativa, status, avaria, retorno, PDA, desktop, BR, Returns, EHA ou operação logística:
-- use exclusivamente os DOCUMENTOS abaixo
-- responda com fidelidade ao conteúdo
-- não complete lacunas por conta própria
-- se a resposta não estiver claramente apoiada no contexto, responda exatamente:
-"Não encontrei essa informação na base."
-
-=========================
-DOCUMENTOS RECUPERADOS
-=========================
+DOCUMENTOS RECUPERADOS:
 {contexto_docs if contexto_docs.strip() else "Nenhum documento recuperado."}
 
-=========================
-MENSAGEM DO USUÁRIO
-=========================
+MENSAGEM DO USUÁRIO:
 {texto_usuario}
 """
 
@@ -325,16 +308,13 @@ if texto_usuario:
         st.markdown(texto_usuario)
 
     try:
-        texto_norm = normalizar_texto(texto_usuario)
+        tipo_mensagem = classificar_mensagem(texto_usuario)
 
-        if eh_saudacao(texto_norm):
-            tipo_mensagem = "SAUDACAO"
+        if tipo_mensagem == "SAUDACAO":
             contexto_docs = ""
-        elif eh_conversa_curta(texto_norm):
-            tipo_mensagem = "CONVERSA_CURTA"
+        elif tipo_mensagem == "CONVERSA":
             contexto_docs = ""
         else:
-            tipo_mensagem = "PERGUNTA_OPERACIONAL"
             _, contexto_docs = buscar_contexto(base_conhecimento, texto_usuario, k=4)
 
         prompt_final = montar_prompt(
@@ -349,10 +329,12 @@ if texto_usuario:
                 {
                     "role": "system",
                     "content": (
-                        "Você é Ariel, um assistente extremamente rigoroso e confiável. "
-                        "Para perguntas operacionais, você responde apenas com base no contexto fornecido. "
-                        "Para saudações e conversas curtas, você responde naturalmente e de forma simpática. "
-                        "Você nunca inventa processos, regras, opções, menus ou fluxos."
+                        "Você é Ariel, um assistente confiável, natural e objetivo. "
+                        "Você entende a intenção do usuário antes de responder. "
+                        "Você responde saudações de forma breve. "
+                        "Você responde perguntas operacionais com base no contexto fornecido. "
+                        "Você nunca se apresenta desnecessariamente em perguntas operacionais. "
+                        "Você nunca inventa processos, regras, fluxos ou menus."
                     )
                 },
                 {
