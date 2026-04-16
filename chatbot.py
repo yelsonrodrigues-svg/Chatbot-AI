@@ -2,6 +2,7 @@ import streamlit as st
 import base64
 import os
 import shutil
+import re
 
 from groq import Groq
 
@@ -33,6 +34,52 @@ def imagem_base64(caminho):
         return ""
     with open(caminho, "rb") as img:
         return base64.b64encode(img.read()).decode()
+
+# =========================
+# 🧠 CLASSIFICAÇÃO DE MENSAGEM
+# =========================
+def normalizar_texto(texto: str) -> str:
+    texto = texto.strip().lower()
+    texto = re.sub(r"\s+", " ", texto)
+    return texto
+
+def eh_saudacao(texto: str) -> bool:
+    texto_norm = normalizar_texto(texto)
+
+    saudacoes_exatas = {
+        "oi",
+        "ola",
+        "olá",
+        "opa",
+        "e ai",
+        "e aí",
+        "bom dia",
+        "boa tarde",
+        "boa noite",
+        "tudo bem",
+        "blz",
+        "beleza",
+        "hello",
+        "hi"
+    }
+
+    return texto_norm in saudacoes_exatas
+
+def eh_conversa_curta(texto: str) -> bool:
+    texto_norm = normalizar_texto(texto)
+
+    conversas_curtas = {
+        "quem é você",
+        "o que você faz",
+        "como você funciona",
+        "me ajuda",
+        "pode me ajudar",
+        "preciso de ajuda",
+        "quais assuntos você responde",
+        "quais perguntas você responde"
+    }
+
+    return texto_norm in conversas_curtas
 
 # =========================
 # 📚 FUNÇÃO AUXILIAR LOADERS
@@ -141,6 +188,88 @@ def carregar_base_conhecimento():
     return db
 
 # =========================
+# 🔎 RECUPERA CONTEXTO
+# =========================
+def buscar_contexto(base_conhecimento, pergunta, k=4):
+    if not base_conhecimento:
+        return [], ""
+
+    try:
+        docs_relacionados = base_conhecimento.similarity_search(pergunta, k=k)
+        contexto_docs = "\n\n".join(
+            [doc.page_content[:1200] for doc in docs_relacionados if getattr(doc, "page_content", "").strip()]
+        )
+        return docs_relacionados, contexto_docs
+    except Exception:
+        return [], ""
+
+# =========================
+# 🧠 PROMPT HÍBRIDO
+# =========================
+def montar_prompt(contexto_docs, texto_usuario, tipo_mensagem):
+    return f"""
+Você é Ariel, um assistente virtual especialista em processos logísticos da Shopee, com foco em EHA e Returns.
+
+Seu comportamento depende do tipo da mensagem do usuário.
+
+=========================
+TIPO DA MENSAGEM
+=========================
+{tipo_mensagem}
+
+=========================
+REGRAS GERAIS
+=========================
+1. Responda sempre em português do Brasil.
+2. Seja claro, objetivo e natural.
+3. Nunca invente regras, processos, fluxos, menus ou opções que não estejam no contexto.
+4. Nunca crie listas numeradas, opções 1/2/3, ou passo a passo, a menos que isso esteja explicitamente presente no contexto.
+5. Se a pergunta for de processo operacional, responda somente com base nos documentos recuperados.
+6. Se não houver informação suficiente para responder uma pergunta de processo, responda exatamente:
+"Não encontrei essa informação na base."
+
+=========================
+REGRAS PARA SAUDAÇÕES E CONVERSAS CURTAS
+=========================
+Se a mensagem do usuário for apenas uma saudação ou conversa curta, como:
+- oi
+- olá
+- bom dia
+- boa tarde
+- boa noite
+- tudo bem
+- quem é você
+- o que você faz
+- pode me ajudar
+
+Então:
+- responda de forma natural e simpática
+- apresente brevemente que você ajuda com processos de EHA e Returns
+- não diga "Não encontrei essa informação na base"
+- não force uso dos documentos para isso
+
+=========================
+REGRAS PARA PERGUNTAS OPERACIONAIS
+=========================
+Se a mensagem do usuário for uma pergunta sobre processo, regra, motivo, tratativa, status, avaria, retorno, PDA, desktop, BR, Returns, EHA ou operação logística:
+- use exclusivamente os DOCUMENTOS abaixo
+- responda com fidelidade ao conteúdo
+- não complete lacunas por conta própria
+- se a resposta não estiver claramente apoiada no contexto, responda exatamente:
+"Não encontrei essa informação na base."
+
+=========================
+DOCUMENTOS RECUPERADOS
+=========================
+{contexto_docs if contexto_docs.strip() else "Nenhum documento recuperado."}
+
+=========================
+MENSAGEM DO USUÁRIO
+=========================
+{texto_usuario}
+"""
+
+# =========================
 # 🚀 LOAD DB
 # =========================
 base_conhecimento = carregar_base_conhecimento()
@@ -185,7 +314,7 @@ for msg in st.session_state.lista_mensagens:
 texto_usuario = st.chat_input("Digite sua pergunta sobre EHA ou Returns...")
 
 # =========================
-# 🤖 CHAT GROQ + RAG
+# 🤖 CHAT GROQ + RAG HÍBRIDO
 # =========================
 if texto_usuario:
     st.session_state.lista_mensagens.append(
@@ -196,41 +325,34 @@ if texto_usuario:
         st.markdown(texto_usuario)
 
     try:
-        # 🔎 RAG SEARCH
-        if base_conhecimento:
-            docs_relacionados = base_conhecimento.similarity_search(texto_usuario, k=4)
-            contexto_docs = "\n\n".join(
-                [doc.page_content[:1000] for doc in docs_relacionados]
-            )
+        texto_norm = normalizar_texto(texto_usuario)
+
+        if eh_saudacao(texto_norm):
+            tipo_mensagem = "SAUDACAO"
+            contexto_docs = ""
+        elif eh_conversa_curta(texto_norm):
+            tipo_mensagem = "CONVERSA_CURTA"
+            contexto_docs = ""
         else:
-            contexto_docs = "Base de conhecimento vazia."
+            tipo_mensagem = "PERGUNTA_OPERACIONAL"
+            _, contexto_docs = buscar_contexto(base_conhecimento, texto_usuario, k=4)
 
-        # 🧠 PROMPT FINAL
-        prompt_final = f"""
-Você é Ariel, um assistente especialista em processos logísticos da Shopee.
+        prompt_final = montar_prompt(
+            contexto_docs=contexto_docs,
+            texto_usuario=texto_usuario,
+            tipo_mensagem=tipo_mensagem
+        )
 
-Regras:
-- Responda SOMENTE com base nos documentos abaixo.
-- Não invente informações.
-- Se não encontrar a resposta, diga exatamente: "Não encontrei essa informação na base."
-- Sempre tente interpretar a pergunta usando palavras-chave relacionadas ao contexto logístico.
-
-DOCUMENTOS:
-{contexto_docs}
-
-PERGUNTA:
-{texto_usuario}
-"""
-
-        # 🚀 GROQ REQUEST
         chat_completion = client.chat.completions.create(
             model=MODEL_NAME,
             messages=[
                 {
                     "role": "system",
                     "content": (
-                        "Você é um assistente especialista em logística e processos da Shopee. "
-                        "Responda apenas com base no contexto fornecido."
+                        "Você é Ariel, um assistente extremamente rigoroso e confiável. "
+                        "Para perguntas operacionais, você responde apenas com base no contexto fornecido. "
+                        "Para saudações e conversas curtas, você responde naturalmente e de forma simpática. "
+                        "Você nunca inventa processos, regras, opções, menus ou fluxos."
                     )
                 },
                 {
@@ -238,11 +360,11 @@ PERGUNTA:
                     "content": prompt_final
                 }
             ],
-            temperature=0.3,
+            temperature=0.2,
             max_tokens=800
         )
 
-        texto_resposta = chat_completion.choices[0].message.content
+        texto_resposta = chat_completion.choices[0].message.content.strip()
 
     except Exception as e:
         st.error("❌ Erro ao gerar resposta")
