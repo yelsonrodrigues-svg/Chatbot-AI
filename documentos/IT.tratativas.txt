@@ -1,8 +1,8 @@
 ========================================================
 [TEMA]
 Tratativas de Pacotes - EHA & Returns
-Pacotes que devem seguir para EHA, são pacotes que por algum motivo apresentaram problemas sistêmicos impactando em seu fluxo natural.
-
+Pacotes que devem seguir para EHA, são pacotes que por algum motivo apresentaram problemas sistêmicos impactando em seu fluxo natural (One piece flow) "Fluxo de uma peça".
+Eha significa Exception Handling Area (Area de tratamento de exceções)
 ========================================================
 
 [INTENÇÃO]
