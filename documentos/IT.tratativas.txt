@@ -1,254 +1,252 @@
-1. Objetivo
+========================================================
+[TEMA]
+Tratativas de Pacotes - EHA & Returns
+========================================================
 
-Descrever o processo de tratamento de pedidos, abordando a identificação do problema que ocasionou a saída do pacote do fluxo de entrega e as medidas a serem tomadas para sua resolução.
+[INTENÇÃO]
+Consulta sobre tratamento de pacotes fora do fluxo, avarias, exceções e processos operacionais no SoC.
 
-2. Campo de Aplicação
+[PALAVRAS-CHAVE GERAIS]
+tratativa, pacote fora do fluxo, EHA, Returns, exceção, avaria, problema pacote, fluxo logístico
+
+--------------------------------------------------------
+[PERGUNTA]
+O que é o processo de tratativa de pacotes?
 
-Todos os SoCs da Shopee Xpress BR.
+[RESPOSTA]
+O processo de tratativa ocorre quando um pacote sai do fluxo normal de entrega devido a alguma inconsistência, sendo necessário identificar o problema e aplicar a ação correta para resolução.
 
-3. Documentos de Referência
+--------------------------------------------------------
+[PERGUNTA]
+Quando o processo de tratativa é iniciado?
+
+[RESPOSTA]
+O processo de tratativa é iniciado quando um pacote apresenta inconsistência e não pode seguir o fluxo normal de entrega.
 
-POP-OPS-SOC-001 - PROCEDIMENTO SORTING CENTER (SoC)
-IT-HSE-MEA-001 - Descarte de Avarias
-Política de Pacotes Permitidos SPX
+--------------------------------------------------------
+[TEMA]
+Fluxos de Tratativa
+--------------------------------------------------------
 
-4. Regras Gerais de Segurança e Qualidade
+[PERGUNTA]
+Quais são os tipos de fluxo de tratativa?
 
-É proibido correr dentro do SoC
-É proibido escrever na scuttle ou saca
-É proibido operar rampa niveladora sem autorização e treinamento
-É proibido descer ou pular da doca
-É proibido auxiliar o motorista a manobrar
-É obrigatório uso de EPI's
-É obrigatório retenção da chave para iniciar a atividade
-É permitido puxar lentamente 5 gaiolas vazias e não empurrar
-É permitido puxar lentamente 1 gaiola cheia por vez e não empurrar
-Não operar paleteira manual correndo
-Quando não estiver utilizando a paleteira/gaiola deve-se estacionar no local demarcado
-O manuseio de pallet deve ser feito em 2 pessoas
+[RESPOSTA]
+Existem dois principais fluxos:
+- Recebimento com tratamento separado
+- Recebimento com tratamento sistêmico
 
-5. Boas Práticas
+--------------------------------------------------------
+[TEMA]
+Status Finalizador
+--------------------------------------------------------
 
-Boas práticas são passos que podem facilitar a execução do processo, melhorar o resultado ou garantir a segurança. Esses passos não são auditáveis.
+[PERGUNTA]
+Quais são os principais status finalizadores de pacotes?
 
-5.1 Operacionais
-Em caso de fanout repetido, posicionar em lados diferentes e distantes da esteira
-Orientação de pacotes com etiqueta voltada para leitura no fluxo
-Demarcação no suporte de saca
-Empilhar tubetes de forma estável
-5.2 Segurança (HSE)
-Inspecionar equipamentos antes de operar
-Não usar roupas soltas
-Colete refletivo fechado
-Cabelos presos e protegidos
-Proibido uso de adornos
-Painéis devem estar fechados e sinalizados
-Nunca colocar parte do corpo abaixo do transportador
+[RESPOSTA]
+Os principais status são:
+- Lost (11)
+- Delivered (12)
+- Cancelled (13)
+- Disposed (47)
+- Damaged (53)
+- Liquidation (88)
 
-6. OpsID e Workstation
+--------------------------------------------------------
+[TEMA]
+Tratamento no PDA
+--------------------------------------------------------
 
-6.1 OpsID
+[PERGUNTA]
+Como funciona o tratamento de pacotes no PDA?
 
-Cadastro individual do colaborador no SPX.
+[RESPOSTA]
+O tratamento no PDA segue os seguintes passos:
+O colaborador deve realizar login e check-in, acessar a área de Tratamento de Exceções, selecionar EHA Single Inbound & Resolve, bipar o pacote, selecionar o motivo e definir se o caso será resolvido offline ou enviado para Returns.
 
-6.2 Check-in
+--------------------------------------------------------
+[TEMA]
+Tratamento no Desktop
+--------------------------------------------------------
 
-Obrigatório antes de iniciar atividades.
+[PERGUNTA]
+Como funciona o tratamento de pacotes no Desktop?
 
-6.3 Check-out
+[RESPOSTA]
+No Desktop, o colaborador acessa a área de Tratativas, realiza o recebimento unitário, bipagem do pacote, seleção do motivo e define se o caso será resolvido offline ou enviado para Returns.
 
-Obrigatório ao final da atividade.
+--------------------------------------------------------
+[TEMA]
+Avaria Líquida (Motivo 55)
+--------------------------------------------------------
 
-7. Descrição do Processo
+[PALAVRAS-CHAVE]
+avaria líquida, vazamento, líquido, motivo 55
 
-O processo de tratativas inicia quando um pacote sai do fluxo normal por inconsistência.
+[PERGUNTA]
+O que fazer em caso de avaria líquida?
 
-7.1 Tipos de fluxo
-Recebimento + tratamento separado
-Recebimento + tratamento sistêmico
-7.2 Status Finalizador
+[RESPOSTA]
+O pacote deve ser retirado do fluxo imediatamente, os brigadistas devem ser acionados, deve-se abrir um ticket com fotos e realizar o descarte correto do material.
 
-Pacotes que não seguem o fluxo normal.
+[REGRA]
+É proibido descartar líquido sem estancar.
 
-Principais Status
+--------------------------------------------------------
+[TEMA]
+Avaria de Produto (Motivo 53)
+--------------------------------------------------------
 
-Status	Código
-Lost	11
-Delivered	12
-Cancelled	13
-Disposed	47
-Damaged	53
-Liquidation	88
+[PERGUNTA]
+O que fazer em caso de avaria de produto?
 
-7.3 Tratamento no PDA
-Login + Check-in
-Tratamento de Exceções
-EHA Single Inbound & Resolve
-Bipar pacote
-Selecionar motivo
-Resolvido Offline
-Enviar para Returns
+[RESPOSTA]
+Deve-se abrir um ticket, separar os produtos afetados e realizar a destinação correta conforme o tipo de avaria, podendo ser total ou parcial.
 
-7.4 Tratamento no Desktop
-Tratativa de Exceções
-Área de Tratativas
-Recebimento Unitário
-Bipar pacote
-Selecionar motivo
-Offline Resolve
-Enviar para Returns
+--------------------------------------------------------
+[TEMA]
+Pequenas Avarias (Motivo 31)
+--------------------------------------------------------
 
-🔥 PROCESSOS DE TRATATIVAS
+[PERGUNTA]
+O que fazer em pequenas avarias de embalagem?
 
-8. Realocação LM_Hub
+[RESPOSTA]
+Deve ser realizado reparo simples utilizando fita, sem necessidade de reembalagem.
 
-Redirecionamento de pacote para outro hub.
+--------------------------------------------------------
+[TEMA]
+Avaria de Embalagem (Motivo 30)
+--------------------------------------------------------
 
-Processo
-Alteração feita por líder/analista
-Atualizar destino no SPX
-Confirmar mudança
+[PERGUNTA]
+O que fazer em avaria de embalagem?
 
-9. Etiqueta Avariada
+[RESPOSTA]
+O pacote deve ser reembalado e uma nova etiqueta deve ser impressa.
 
-Reimpressão via Desktop
-Motivo: 22
-Pode usar NF para recuperar BR
+--------------------------------------------------------
+[TEMA]
+Embalagem Vazia (Motivo 56)
+--------------------------------------------------------
 
-10. Consulta de BR
+[PERGUNTA]
+O que fazer quando a embalagem está vazia?
 
-10.1 AppSheet
-Selecionar SOC
-Bipar NF
-Aguardar retorno
-10.2 Receita Federal
-Consultar NF
-Usar campo "Pedido" como BR
+[RESPOSTA]
+Deve-se abrir um ticket, tirar fotos e realizar o descarte após registro.
 
-11. Pequenas Avarias (Embalagem)
+--------------------------------------------------------
+[TEMA]
+Embalagem Inadequada (Motivo 34)
+--------------------------------------------------------
 
-Motivo: 31
-Reparo simples (fita)
-Sem reembalagem
+[PERGUNTA]
+O que fazer em caso de embalagem inadequada?
 
-12. Avaria de Embalagem
+[RESPOSTA]
+Deve-se reembalar o pacote se possível. Caso contrário, o pacote deve ser enviado para Returns.
 
-Motivo: 30
-Reembalar
-Imprimir nova etiqueta
+--------------------------------------------------------
+[TEMA]
+Produto Proibido (Motivo 64)
+--------------------------------------------------------
 
-13. Avaria Líquida
-Motivo: 55
+[PERGUNTA]
+O que fazer quando o pacote contém produto proibido?
 
-Regras
-Retirar do fluxo imediatamente
-Acionar brigadistas
-Abrir ticket com fotos
-Descartar corretamente
+[RESPOSTA]
+Deve-se abrir um Escalation Ticket, anexar evidências e direcionar o pacote para Returns.
 
-⚠️ PROIBIDO descartar líquido sem estancar
+--------------------------------------------------------
+[TEMA]
+Pacote Fora de Perfil (Motivo 99)
+--------------------------------------------------------
 
-14. Avaria de Produto
-Motivo: 53
+[PERGUNTA]
+O que caracteriza um pacote fora de perfil?
 
-Tipos
-Total
-Parcial
-Regras
-Abrir ticket
-Separar produtos
-Destinar corretamente
-
-15. Embalagem Vazia
-
-Motivo: 56
-Abrir ticket
-Tirar fotos
-Descartar após registro
-16. Embalagem Inadequada
-
-Motivo: 34
-Reembalar se possível
-Caso contrário → Returns
-
-17. Produtos Proibidos
-
-Motivo: 64
-Abrir Escalation Ticket
-Anexar evidências
-Direcionar para Returns
-
-18. Pacote Fora de Perfil
-
-Motivo: 99
-Critérios
-125 cm
-Soma >210 cm
-Peso >31 kg
-
-19. Realocação 3PL
-Alteração feita por analista
-Reimpressão de etiqueta
-Retorno ao fluxo
-
-20. Reimpressão de Etiquetas
-Print AWB
-Aplicar nova etiqueta
-Retornar ao fluxo
-
-21. Duplicidade
-
-21.1 Suspeita
-Quarentena por 7 dias
-21.2 Confirmada
-Motivo: 28
-Um segue fluxo
-Outro permanece em quarentena
-
-22. Receita Federal
-
-Motivo: 62
-Verificar status
-Seguir orientação da planilha
-Abrir ticket se necessário
-
-23. Pacote sem etiqueta
-→ Direcionar para Returns
-
-24. Erro Operacional
-
-Motivo: 26
-Sem tratativa
-Retornar ao fluxo
-
-25. Anexos
-Layout Tratativas
-Política de Produtos Proibidos
-
-26. Termos e Definições
-
-(Conteúdo mantido integralmente conforme original)
-
-SoC
-SPX
-PDA
-3PL
-LM_Hub
-FM_Hub
-CT-e
-etc.
-27. Atualizações
-
-Histórico completo mantido:
-
-05/07/2024 – Versão inicial
-02/12/2024 – Revisão geral
-19/12/2024 – Ajustes
-05/05/2025 – Reformulação
-23/07/2025 – Atualizações
-01/09/2025 – Revisões
-28. Validação
-Marília Alves
-Juliana Aleixo Schmidt
-Guilherme Sartori
-Alvaro Rueda
+[RESPOSTA]
+Pacotes com dimensões acima de 125 cm, soma superior a 210 cm ou peso acima de 31 kg.
+
+--------------------------------------------------------
+[TEMA]
+Pacote sem Etiqueta
+--------------------------------------------------------
+
+[PERGUNTA]
+Para onde deve ir um pacote sem etiqueta?
+
+[RESPOSTA]
+Pacote sem etiqueta deve ser direcionado para Returns.
+
+--------------------------------------------------------
+[TEMA]
+Erro Operacional (Motivo 26)
+--------------------------------------------------------
+
+[PERGUNTA]
+O que fazer em caso de erro operacional?
+
+[RESPOSTA]
+Não há tratativa. O pacote deve retornar ao fluxo normal.
+
+--------------------------------------------------------
+[TEMA]
+Consulta de BR
+--------------------------------------------------------
+
+[PERGUNTA]
+Como consultar o BR de um pacote?
+
+[RESPOSTA]
+Pode ser consultado via AppSheet selecionando o SOC e bipando a NF, ou via Receita Federal utilizando o campo "Pedido".
+
+--------------------------------------------------------
+[TEMA]
+Realocação de Pacotes
+--------------------------------------------------------
+
+[PERGUNTA]
+Como funciona a realocação de pacotes?
+
+[RESPOSTA]
+A realocação é feita por líder ou analista, atualizando o destino no sistema SPX e confirmando a mudança.
+
+--------------------------------------------------------
+[TEMA]
+Duplicidade
+--------------------------------------------------------
+
+[PERGUNTA]
+O que fazer em caso de duplicidade de pacote?
+
+[RESPOSTA]
+Em caso de suspeita, o pacote deve permanecer em quarentena por 7 dias. Se confirmado, um pacote segue o fluxo normal e o outro permanece em quarentena.
+
+--------------------------------------------------------
+[TEMA]
+Regras Gerais de Segurança
+--------------------------------------------------------
+
+[PERGUNTA]
+Quais são as principais regras de segurança no SoC?
+
+[RESPOSTA]
+É obrigatório o uso de EPIs, é proibido correr no SoC, operar equipamentos sem autorização, pular da doca, auxiliar manobra de veículos e descartar materiais de forma incorreta.
+
+--------------------------------------------------------
+[TEMA]
+Boas Práticas Operacionais
+--------------------------------------------------------
+
+[PERGUNTA]
+Quais são boas práticas operacionais no tratamento de pacotes?
+
+[RESPOSTA]
+Manter etiquetas visíveis, organizar pacotes corretamente, posicionar fanouts de forma adequada e garantir estabilidade no empilhamento.
+
+========================================================
+[FIM DO DOCUMENTO]
+========================================================
