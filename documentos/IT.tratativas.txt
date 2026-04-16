@@ -7,10 +7,13 @@ Descrever o processo de tratamento de pedidos, abordando a identificação do pr
 Todos os SoCs da Shopee Xpress BR.
 
 3. Documentos de Referência
+
 POP-OPS-SOC-001 - PROCEDIMENTO SORTING CENTER (SoC)
 IT-HSE-MEA-001 - Descarte de Avarias
 Política de Pacotes Permitidos SPX
+
 4. Regras Gerais de Segurança e Qualidade
+
 É proibido correr dentro do SoC
 É proibido escrever na scuttle ou saca
 É proibido operar rampa niveladora sem autorização e treinamento
@@ -23,6 +26,7 @@ Política de Pacotes Permitidos SPX
 Não operar paleteira manual correndo
 Quando não estiver utilizando a paleteira/gaiola deve-se estacionar no local demarcado
 O manuseio de pallet deve ser feito em 2 pessoas
+
 5. Boas Práticas
 
 Boas práticas são passos que podem facilitar a execução do processo, melhorar o resultado ou garantir a segurança. Esses passos não são auditáveis.
@@ -40,7 +44,9 @@ Cabelos presos e protegidos
 Proibido uso de adornos
 Painéis devem estar fechados e sinalizados
 Nunca colocar parte do corpo abaixo do transportador
+
 6. OpsID e Workstation
+
 6.1 OpsID
 
 Cadastro individual do colaborador no SPX.
@@ -65,6 +71,7 @@ Recebimento + tratamento sistêmico
 Pacotes que não seguem o fluxo normal.
 
 Principais Status
+
 Status	Código
 Lost	11
 Delivered	12
@@ -72,6 +79,7 @@ Cancelled	13
 Disposed	47
 Damaged	53
 Liquidation	88
+
 7.3 Tratamento no PDA
 Login + Check-in
 Tratamento de Exceções
@@ -80,6 +88,7 @@ Bipar pacote
 Selecionar motivo
 Resolvido Offline
 Enviar para Returns
+
 7.4 Tratamento no Desktop
 Tratativa de Exceções
 Área de Tratativas
@@ -88,7 +97,9 @@ Bipar pacote
 Selecionar motivo
 Offline Resolve
 Enviar para Returns
+
 🔥 PROCESSOS DE TRATATIVAS
+
 8. Realocação LM_Hub
 
 Redirecionamento de pacote para outro hub.
@@ -97,11 +108,15 @@ Processo
 Alteração feita por líder/analista
 Atualizar destino no SPX
 Confirmar mudança
+
 9. Etiqueta Avariada
+
 Reimpressão via Desktop
 Motivo: 22
 Pode usar NF para recuperar BR
+
 10. Consulta de BR
+
 10.1 AppSheet
 Selecionar SOC
 Bipar NF
@@ -109,20 +124,20 @@ Aguardar retorno
 10.2 Receita Federal
 Consultar NF
 Usar campo "Pedido" como BR
+
 11. Pequenas Avarias (Embalagem)
 
 Motivo: 31
-
 Reparo simples (fita)
 Sem reembalagem
+
 12. Avaria de Embalagem
 
 Motivo: 30
-
 Reembalar
 Imprimir nova etiqueta
-13. Avaria Líquida
 
+13. Avaria Líquida
 Motivo: 55
 
 Regras
@@ -134,7 +149,6 @@ Descartar corretamente
 ⚠️ PROIBIDO descartar líquido sem estancar
 
 14. Avaria de Produto
-
 Motivo: 53
 
 Tipos
@@ -144,73 +158,73 @@ Regras
 Abrir ticket
 Separar produtos
 Destinar corretamente
+
 15. Embalagem Vazia
 
 Motivo: 56
-
 Abrir ticket
 Tirar fotos
 Descartar após registro
 16. Embalagem Inadequada
 
 Motivo: 34
-
 Reembalar se possível
 Caso contrário → Returns
+
 17. Produtos Proibidos
 
 Motivo: 64
-
 Abrir Escalation Ticket
 Anexar evidências
 Direcionar para Returns
+
 18. Pacote Fora de Perfil
 
 Motivo: 99
-
 Critérios
-
 125 cm
-
 Soma >210 cm
 Peso >31 kg
+
 19. Realocação 3PL
 Alteração feita por analista
 Reimpressão de etiqueta
 Retorno ao fluxo
+
 20. Reimpressão de Etiquetas
 Print AWB
 Aplicar nova etiqueta
 Retornar ao fluxo
+
 21. Duplicidade
+
 21.1 Suspeita
 Quarentena por 7 dias
 21.2 Confirmada
-
 Motivo: 28
-
 Um segue fluxo
 Outro permanece em quarentena
+
 22. Receita Federal
 
 Motivo: 62
-
 Verificar status
 Seguir orientação da planilha
 Abrir ticket se necessário
-23. Pacote sem etiqueta
 
+23. Pacote sem etiqueta
 → Direcionar para Returns
 
 24. Erro Operacional
 
 Motivo: 26
-
 Sem tratativa
 Retornar ao fluxo
+
 25. Anexos
 Layout Tratativas
 Política de Produtos Proibidos
+
 26. Termos e Definições
 
 (Conteúdo mantido integralmente conforme original)
