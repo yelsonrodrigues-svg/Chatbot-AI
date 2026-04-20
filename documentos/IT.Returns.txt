@@ -1,0 +1,921 @@
+﻿[docnix_tipoDocumento]
+	[docnix_numeroCompleto]
+	  
+
+	[docnix_tituloDocumento]
+	     [docnix_versao]
+	Data:
+      [docnix_vigenciaDesde]
+	
+
+PROCESSO DE REVERSA RETURNS
+
+
+Reversa Returns é o processo responsável pela devolução de pacotes que, por diversos motivos, precisaram ser retirados do fluxo normal de entrega. O objetivo é garantir rastreabilidade, integridade dos volumes, padronização operacional e destino correto de cada pacote.
+
+
+========================================================
+
+
+INTENÇÃO
+
+
+Consulta sobre devolução de pacotes, tratativas operacionais, exceções logísticas, salvados, status sistêmicos e processos internos no Sorting Center.
+
+
+PALAVRAS-CHAVE GERAIS
+
+
+reversa, returns, devolução, pacote devolvido, seller, salvados, tratativa, status, SPX, SoC, logística, exceção
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que é o processo de Reversa Returns?
+
+
+RESPOSTA
+
+
+É o processo operacional destinado a pacotes que saíram do fluxo normal de entrega e precisam de devolução, reprocessamento, tratativa sistêmica ou destinação específica.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Qual o principal objetivo desse processo?
+
+
+RESPOSTA
+
+
+Garantir controle operacional, rastreabilidade, integridade física do pacote e correta destinação final.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Onde esse processo se aplica?
+
+
+RESPOSTA
+
+
+Em todos os Sorting Centers da Shopee Xpress Brasil.
+
+
+========================================================
+
+
+REGRAS GERAIS DE SEGURANÇA E QUALIDADE
+
+
+Normas obrigatórias para execução segura das atividades.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Quais práticas são proibidas?
+
+
+RESPOSTA
+
+
+Correr dentro do SoC, escrever em sacas ou scuttle, operar rampa sem autorização, pular da doca, auxiliar manobra de veículos e operar paleteira correndo.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Quais práticas são obrigatórias?
+
+
+RESPOSTA
+
+
+Uso de EPI, retenção da chave do veículo, estacionamento correto de equipamentos e movimentação segura de cargas.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Como deve ser o manuseio de pallet?
+
+
+RESPOSTA
+
+
+Sempre realizado por duas pessoas.
+
+
+========================================================
+
+
+BOAS PRÁTICAS OPERACIONAIS
+
+
+Ações recomendadas para aumentar produtividade, organização e segurança.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Quais exemplos de boas práticas?
+
+
+RESPOSTA
+
+
+Etiqueta posicionada para leitura na esteira, dobra correta de saca, empilhamento estável de tubetes e inspeção visual dos equipamentos antes do uso.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Essas práticas são auditáveis?
+
+
+RESPOSTA
+
+
+Não. São recomendações operacionais para melhoria contínua.
+
+
+========================================================
+
+
+OPSID E WORKSTATION
+
+
+Controle sistêmico individual para execução operacional.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que é OpsID?
+
+
+RESPOSTA
+
+
+É o cadastro individual do colaborador no sistema SPX, utilizado para acesso aos processos sistêmicos.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que é Check-in na Workstation?
+
+
+RESPOSTA
+
+
+É o registro obrigatório do colaborador antes de iniciar atividades no sistema.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que é Check-out?
+
+
+RESPOSTA
+
+
+É o encerramento do vínculo operacional no sistema ao final da atividade.
+
+
+========================================================
+
+
+SEGURANÇA EM DOCA E MANOBRA
+
+
+Procedimentos obrigatórios durante chegada e descarga de veículos.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que é proibido durante manobra?
+
+
+RESPOSTA
+
+
+Colocar corpo para fora da doca e orientar motorista enquanto ele estaciona.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que deve ser feito após estacionar?
+
+
+RESPOSTA
+
+
+Solicitar chave do veículo, pendurar no claviculário e exigir aplicação de dois calços na roda traseira.
+
+
+========================================================
+
+
+RECEBIMENTO 3PL XD
+
+
+Entrada de pacotes devolvidos por transportadoras terceiras após insucesso de entrega ao cliente.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que significa 3PL XD?
+
+
+RESPOSTA
+
+
+Third Party Logistics. Parceiros logísticos terceirizados responsáveis por determinadas entregas.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Como o recebimento deve ocorrer?
+
+
+RESPOSTA
+
+
+De forma unitária, pacote por pacote.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Quais pacotes podem ser recusados?
+
+
+RESPOSTA
+
+
+Produto avariado, BR ilegível, pacote sem etiqueta BR, pacote fora do romaneio, pacote D2D ou pacote de outro marketplace.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Pacotes J&T e Loggi sem BR podem ser recebidos?
+
+
+RESPOSTA
+
+
+Somente se o código constar na planilha de redespacho.
+
+
+========================================================
+
+
+TRIAGEM NO RECEBIMENTO
+
+
+Separação inicial dos pacotes recebidos.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Como separar os pacotes?
+
+
+RESPOSTA
+
+
+Pacotes sem BR em uma gaiola específica, pacotes com possível recusa em outra e pacotes aptos em gaiola própria ou no unitizador original.
+
+
+========================================================
+
+
+ROMANEIO E LIBERAÇÃO DE MOTORISTA
+
+
+Controle documental do recebimento.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Para que serve o romaneio?
+
+
+RESPOSTA
+
+
+Registrar pacotes recebidos, recusados e pendentes, além de liberar formalmente o motorista.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Quem deve preencher?
+
+
+RESPOSTA
+
+
+Líder ou Analista de Reversa.
+
+
+========================================================
+
+
+RECEBIMENTO 3PL RTS (CORREIOS)
+
+
+Fluxo de devolução ao seller realizado pelos Correios.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Pacotes Correios podem ser recusados?
+
+
+RESPOSTA
+
+
+Não. Nenhum pacote desse fluxo pode ser recusado.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Como identificar?
+
+
+RESPOSTA
+
+
+Pela etiqueta específica de devolução Correios.
+
+
+========================================================
+
+
+RECEBIMENTO XPT
+
+
+Devoluções recebidas diretamente no Sorting Center.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Como funciona?
+
+
+RESPOSTA
+
+
+Recebimento unitário com direcionamento conforme status online ou status finalizador.
+
+
+========================================================
+
+
+CONSULTA DE STATUS NO SISTEMA SPX
+
+
+Etapa obrigatória para definir destino correto do pacote.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Por que consultar o status?
+
+
+RESPOSTA
+
+
+Para identificar se o pacote seguirá devolução ao seller, reetiquetagem, salvados ou outra tratativa.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Onde consultar?
+
+
+RESPOSTA
+
+
+Pedidos > Rastreio de Pedidos no sistema SPX.
+
+
+========================================================
+
+
+RETURN REFUND
+
+
+Pacotes devolvidos pelo cliente após entrega concluída.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que é Return Refund?
+
+
+RESPOSTA
+
+
+É o fluxo de devolução iniciado pelo cliente em ponto de coleta após a entrega.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Como identificar?
+
+
+RESPOSTA
+
+
+Pela presença de QR Code na embalagem.
+
+
+========================================================
+
+
+IMPRESSÃO DE ETIQUETA
+
+
+Processo para substituir ou gerar nova etiqueta.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Quando imprimir nova etiqueta?
+
+
+RESPOSTA
+
+
+Quando a original estiver danificada, ilegível, desatualizada ou o pacote entrar em reversa.
+
+
+========================================================
+
+
+QUARENTENA DE PACOTES
+
+
+Área temporária de retenção operacional.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Quando usar quarentena?
+
+
+RESPOSTA
+
+
+Quando o pacote depende de atualização sistêmica antes de seguir para salvados.
+
+
+========================================================
+
+
+FORA DE PERFIL SPX
+
+
+Pacotes acima do limite operacional permitido.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Quando um pacote é fora de perfil?
+
+
+RESPOSTA
+
+
+Maior lado acima de 125 cm, soma total superior a 210 cm ou peso acima de 31 kg.
+
+
+========================================================
+
+
+CROSS BORDER
+
+
+Pacotes importados recebidos via aeroportos.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que é Cross Border?
+
+
+RESPOSTA
+
+
+Operação Shopee responsável por pedidos internacionais recebidos em aeroportos e enviados ao SoC.
+
+
+========================================================
+
+
+STATUS FINALIZADOR
+
+
+Status que impedem novas movimentações sistêmicas.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que é status finalizador?
+
+
+RESPOSTA
+
+
+É um status que bloqueia movimentações adicionais no sistema.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Exemplos?
+
+
+RESPOSTA
+
+
+Delivered, Lost, Damaged, Disposed, Return Failed, 3PL Delivered e Liquidated.
+
+
+========================================================
+
+
+LIQUIDATION
+
+
+Fluxo sistêmico de entrada em salvados.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que é Liquidation?
+
+
+RESPOSTA
+
+
+Status aplicado a pacotes destinados ao fluxo de salvados.
+
+
+========================================================
+
+
+SALVADOS
+
+
+Comercialização de produtos não entregues nem devolvidos ao seller.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que é Salvados?
+
+
+RESPOSTA
+
+
+Processo de venda de produtos elegíveis após encerramento logístico.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Quais pacotes entram nesse fluxo?
+
+
+RESPOSTA
+
+
+Pacotes com status Liquidating ou sem Tracking Number.
+
+
+========================================================
+
+
+CATALOGAÇÃO DE SALVADOS
+
+
+Registro operacional dos itens elegíveis para venda.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Como funciona?
+
+
+RESPOSTA
+
+
+Pacotes com tracking number entram via sistema SPX. Pacotes sem tracking number entram por planilhas internas.
+
+
+========================================================
+
+
+EXPEDIÇÃO DE SALVADOS
+
+
+Saída de lotes vendidos.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+Quem realiza carregamento?
+
+
+RESPOSTA
+
+
+Comprador ou transportadora responsável. Colaboradores Shopee não carregam.
+
+
+========================================================
+
+
+PRODUTOS PROIBIDOS
+
+
+Itens não permitidos na plataforma.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que fazer ao identificar produto proibido?
+
+
+RESPOSTA
+
+
+Registrar motivo de tratativa, abrir ticket EHA, anexar evidências e seguir direcionamento operacional.
+
+
+========================================================
+
+
+EXCEÇÕES DE PROCESSO
+
+
+Casos fora do fluxo padrão.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que fazer quando pacote consta no 3PL?
+
+
+RESPOSTA
+
+
+Acionar liderança para atualização sistêmica para Return_SOC_Received.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+E quando pacote vem de LM Hub com erro?
+
+
+RESPOSTA
+
+
+Formalizar e-mail ao Controle RTS com evidências e aguardar direcionamento.
+
+
+========================================================
+
+
+TERMOS OPERACIONAIS
+
+
+PERGUNTA
+
+
+O que significa SoC?
+
+
+RESPOSTA
+
+
+Sorting Center. Unidade logística operacional.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que significa PDA?
+
+
+RESPOSTA
+
+
+Dispositivo portátil utilizado para bipagem e processos sistêmicos.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que significa TO?
+
+
+RESPOSTA
+
+
+Track Order. Etiqueta de identificação de unitizadores.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que significa Scuttle?
+
+
+RESPOSTA
+
+
+Estrutura utilizada para armazenar e transportar pacotes.
+
+
+--------------------------------------------------------
+
+
+PERGUNTA
+
+
+O que significa D2D?
+
+
+RESPOSTA
+
+
+Door to Door. Pedido fora da malha logística SPX.
+Página
