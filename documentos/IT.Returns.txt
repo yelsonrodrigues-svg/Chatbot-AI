@@ -1,593 +1,545 @@
-```txt
-PROCESSO DE REVERSA RETURNS
-
-TERMOS DE LIGAÇÃO
-
-reversa, returns, devolução, pacote devolvido, seller, pacote voltou, retorno logístico, fluxo reversa, tratativa reversa
-
-PERGUNTA
-
-O que é o processo de Reversa Returns?
-
-RESPOSTA
-
-Reversa Returns é o processo responsável pela devolução de pacotes que, por diversos motivos, precisaram ser retirados do fluxo normal de entrega. O objetivo é garantir rastreabilidade, integridade dos volumes, padronização operacional e destino correto de cada pacote.
-
---------------------------------------------------------
-
-PERGUNTA
-
-Qual o principal objetivo da reversa?
-
-RESPOSTA
-
-Garantir controle operacional, rastreabilidade, integridade física do pacote e correta destinação final.
-
---------------------------------------------------------
-
-PERGUNTA
-
-Onde o processo se aplica?
-
-RESPOSTA
-
-Em todos os Sorting Centers da Shopee Xpress Brasil.
-
+========================================================
+[TEMA]
+Processo de Reversa Returns
+Reversa Returns é o processo responsável pela devolução de pacotes que, por diversos motivos, precisaram ser retirados do fluxo de entrega.
 ========================================================
 
-REGRAS GERAIS DE SEGURANÇA E QUALIDADE
+[INTENÇÃO]
+Consulta sobre reversa, devolução de pacotes, returns, seller e processos operacionais.
 
-TERMOS DE LIGAÇÃO
-
-reversa segurança, segurança reversa, doca reversa, regras reversa, EPI reversa, operação reversa segura
-
-PERGUNTA
-
-Quais práticas são proibidas?
-
-RESPOSTA
-
-Correr dentro do SoC, escrever em sacas ou scuttle, operar rampa sem autorização, pular da doca, auxiliar manobra de veículos e operar paleteira correndo.
+[PALAVRAS-CHAVE GERAIS]
+reversa, returns, devolução, seller, pacote devolvido, pacote voltou, fluxo reversa
 
 --------------------------------------------------------
+[PERGUNTA]
+O que é o processo de Reversa Returns?
 
-PERGUNTA
-
-Quais práticas são obrigatórias?
-
-RESPOSTA
-
-Uso de EPI, retenção da chave do veículo, estacionamento correto de equipamentos e movimentação segura de cargas.
+[RESPOSTA]
+É o processo operacional voltado à devolução de pacotes retirados do fluxo normal de entrega por diversos motivos.
 
 --------------------------------------------------------
+[PERGUNTA]
+Qual o objetivo principal?
 
-PERGUNTA
+[RESPOSTA]
+Garantir rastreabilidade, integridade dos pacotes, padronização operacional e destinação correta.
 
+--------------------------------------------------------
+[PERGUNTA]
+Onde se aplica?
+
+[RESPOSTA]
+Em todos os SoCs da Shopee Xpress Brasil.
+
+========================================================
+[TEMA]
+Regras Gerais de Segurança e Qualidade na Reversa
+Normas obrigatórias para execução segura das atividades.
+========================================================
+
+[INTENÇÃO]
+Consulta sobre segurança operacional, EPI, doca, pallet e movimentação.
+
+[PALAVRAS-CHAVE GERAIS]
+segurança reversa, EPI reversa, doca reversa, pallet reversa, operação segura
+
+--------------------------------------------------------
+[PERGUNTA]
+O que é proibido?
+
+[RESPOSTA]
+Correr no SoC, escrever em saca/scuttle, operar rampa sem autorização, pular da doca, auxiliar manobra e correr com paleteira.
+
+--------------------------------------------------------
+[PERGUNTA]
+O que é obrigatório?
+
+[RESPOSTA]
+Uso de EPI, retenção de chave do veículo, estacionamento correto dos equipamentos e movimentação segura.
+
+--------------------------------------------------------
+[PERGUNTA]
 Como deve ser o manuseio de pallet?
 
-RESPOSTA
-
+[RESPOSTA]
 Sempre realizado por duas pessoas.
 
 ========================================================
+[TEMA]
+Boas Práticas na Reversa
+Ações recomendadas para melhorar segurança e produtividade.
+========================================================
 
-BOAS PRÁTICAS OPERACIONAIS
+[INTENÇÃO]
+Consulta sobre organização operacional e melhores práticas.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+boas práticas reversa, organização reversa, produtividade reversa, padrão reversa
 
-boas práticas reversa, melhoria reversa, produtividade reversa, organização reversa, padrão reversa
-
-PERGUNTA
-
+--------------------------------------------------------
+[PERGUNTA]
 Quais exemplos de boas práticas?
 
-RESPOSTA
-
-Etiqueta posicionada para leitura na esteira, dobra correta de saca, empilhamento estável de tubetes e inspeção visual dos equipamentos antes do uso.
+[RESPOSTA]
+Etiqueta voltada para leitura, dobra correta da saca, empilhamento estável de tubetes e inspeção visual dos equipamentos.
 
 --------------------------------------------------------
+[PERGUNTA]
+São auditáveis?
 
-PERGUNTA
-
-Essas práticas são auditáveis?
-
-RESPOSTA
-
-Não. São recomendações operacionais para melhoria contínua.
+[RESPOSTA]
+Não. São recomendações operacionais.
 
 ========================================================
+[TEMA]
+OpsID e Workstation na Reversa
+Acesso sistêmico para execução dos processos.
+========================================================
 
-OPSID E WORKSTATION
+[INTENÇÃO]
+Consulta sobre login, check-in e uso do sistema SPX.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+opsid reversa, workstation reversa, login reversa, check-in reversa
 
-login reversa, workstation reversa, check-in reversa, sistema reversa, acesso reversa, opsid reversa
-
-PERGUNTA
-
+--------------------------------------------------------
+[PERGUNTA]
 O que é OpsID?
 
-RESPOSTA
-
-É o cadastro individual do colaborador no sistema SPX, utilizado para acesso aos processos sistêmicos.
-
---------------------------------------------------------
-
-PERGUNTA
-
-O que é Check-in na Workstation?
-
-RESPOSTA
-
-É o registro obrigatório do colaborador antes de iniciar atividades no sistema.
+[RESPOSTA]
+Cadastro individual do colaborador no sistema SPX.
 
 --------------------------------------------------------
+[PERGUNTA]
+O que é check-in na Workstation?
 
-PERGUNTA
+[RESPOSTA]
+Registro obrigatório antes de iniciar atividades sistêmicas.
 
-O que é Check-out?
+--------------------------------------------------------
+[PERGUNTA]
+O que é check-out?
 
-RESPOSTA
-
-É o encerramento do vínculo operacional no sistema ao final da atividade.
+[RESPOSTA]
+Encerramento do vínculo operacional no sistema ao final da atividade.
 
 ========================================================
+[TEMA]
+Segurança em Doca e Manobra na Reversa
+Procedimentos para chegada de veículos.
+========================================================
 
-SEGURANÇA EM DOCA E MANOBRA
+[INTENÇÃO]
+Consulta sobre caminhão, doca, chave e calço de roda.
 
-TERMOS DE LIGAÇÃO
-
-doca reversa, descarga reversa, caminhão reversa, manobra reversa, recebimento reversa doca
-
-PERGUNTA
-
-O que é proibido durante manobra?
-
-RESPOSTA
-
-Colocar corpo para fora da doca e orientar motorista enquanto ele estaciona.
+[PALAVRAS-CHAVE GERAIS]
+doca reversa, caminhão reversa, descarga reversa, manobra reversa
 
 --------------------------------------------------------
+[PERGUNTA]
+O que é proibido durante a manobra?
 
-PERGUNTA
+[RESPOSTA]
+Colocar corpo para fora da doca e orientar motorista durante estacionamento.
 
+--------------------------------------------------------
+[PERGUNTA]
 O que deve ser feito após estacionar?
 
-RESPOSTA
-
-Solicitar chave do veículo, pendurar no claviculário e exigir aplicação de dois calços na roda traseira.
+[RESPOSTA]
+Solicitar chave, pendurar no claviculário e aplicar dois calços na roda traseira.
 
 ========================================================
+[TEMA]
+Recebimento 3PL XD na Reversa
+Pacotes devolvidos por transportadoras terceiras.
+========================================================
 
-RECEBIMENTO 3PL XD
+[INTENÇÃO]
+Consulta sobre J&T, Loggi, devolução cliente e recebimento 3PL.
 
-TERMOS DE LIGAÇÃO
-
-reversa 3pl, reversa xd, pacote devolvido transportadora, recebimento reversa 3pl, pacote voltou cliente
-
-PERGUNTA
-
-O que significa 3PL XD?
-
-RESPOSTA
-
-Third Party Logistics. Parceiros logísticos terceirizados responsáveis por determinadas entregas.
+[PALAVRAS-CHAVE GERAIS]
+3pl reversa, xd reversa, pacote devolvido transportadora, recebimento reversa
 
 --------------------------------------------------------
+[PERGUNTA]
+O que significa 3PL XD?
 
-PERGUNTA
+[RESPOSTA]
+Transportadoras terceirizadas que realizam parte da operação logística.
 
+--------------------------------------------------------
+[PERGUNTA]
 Como o recebimento deve ocorrer?
 
-RESPOSTA
-
+[RESPOSTA]
 De forma unitária, pacote por pacote.
 
 --------------------------------------------------------
-
-PERGUNTA
-
+[PERGUNTA]
 Quais pacotes podem ser recusados?
 
-RESPOSTA
-
-Produto avariado, BR ilegível, pacote sem etiqueta BR, pacote fora do romaneio, pacote D2D ou pacote de outro marketplace.
+[RESPOSTA]
+Produto avariado, BR ilegível, sem etiqueta BR, D2D, outro marketplace ou fora do romaneio.
 
 ========================================================
+[TEMA]
+Triagem no Recebimento da Reversa
+Separação correta dos volumes recebidos.
+========================================================
 
-TRIAGEM NO RECEBIMENTO
+[INTENÇÃO]
+Consulta sobre gaiolas, triagem e separação operacional.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+triagem reversa, gaiola reversa, separação reversa
 
-triagem reversa, separação reversa, gaiola reversa, organizar devolução, recebimento reversa triagem
-
-PERGUNTA
-
+--------------------------------------------------------
+[PERGUNTA]
 Como separar os pacotes?
 
-RESPOSTA
-
-Pacotes sem BR em uma gaiola específica, pacotes com possível recusa em outra e pacotes aptos em gaiola própria ou no unitizador original.
+[RESPOSTA]
+Sem BR em uma gaiola, possível recusa em outra e aptos para recebimento em local separado.
 
 ========================================================
+[TEMA]
+Romaneio e Liberação de Motorista na Reversa
+Controle documental da carga recebida.
+========================================================
 
-ROMANEIO E LIBERAÇÃO DE MOTORISTA
+[INTENÇÃO]
+Consulta sobre romaneio, motorista e liberação de veículo.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+romaneio reversa, motorista reversa, liberação caminhão reversa
 
-romaneio reversa, motorista reversa, documento reversa, liberação caminhão reversa, planilha reversa
-
-PERGUNTA
-
+--------------------------------------------------------
+[PERGUNTA]
 Para que serve o romaneio?
 
-RESPOSTA
-
+[RESPOSTA]
 Registrar pacotes recebidos, recusados e pendentes, além de liberar formalmente o motorista.
 
 --------------------------------------------------------
+[PERGUNTA]
+Quem preenche?
 
-PERGUNTA
-
-Quem deve preencher?
-
-RESPOSTA
-
+[RESPOSTA]
 Líder ou Analista de Reversa.
 
 ========================================================
+[TEMA]
+Recebimento 3PL RTS Correios na Reversa
+Pacotes devolvidos ao seller via Correios.
+========================================================
 
-RECEBIMENTO 3PL RTS (CORREIOS)
+[INTENÇÃO]
+Consulta sobre Correios, devolução seller e RTS.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+correios reversa, rts reversa, seller reversa
 
-reversa correios, correios seller, pacote devolvido correios, RTS reversa, correios returns
-
-PERGUNTA
-
+--------------------------------------------------------
+[PERGUNTA]
 Pacotes Correios podem ser recusados?
 
-RESPOSTA
-
+[RESPOSTA]
 Não. Nenhum pacote desse fluxo pode ser recusado.
 
 --------------------------------------------------------
-
-PERGUNTA
-
+[PERGUNTA]
 Como identificar?
 
-RESPOSTA
-
+[RESPOSTA]
 Pela etiqueta específica de devolução Correios.
 
 ========================================================
+[TEMA]
+Recebimento XPT na Reversa
+Pacotes devolvidos diretamente ao SoC.
+========================================================
 
-RECEBIMENTO XPT
+[INTENÇÃO]
+Consulta sobre XPT e devolução direta.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+xpt reversa, devolução xpt, pacote xpt voltou
 
-xpt reversa, devolução xpt, recebimento reversa xpt, pacote xpt voltou
-
-PERGUNTA
-
+--------------------------------------------------------
+[PERGUNTA]
 Como funciona?
 
-RESPOSTA
-
-Recebimento unitário com direcionamento conforme status online ou status finalizador.
+[RESPOSTA]
+Recebimento unitário com direcionamento conforme status online ou finalizador.
 
 ========================================================
+[TEMA]
+Consulta de Status no Sistema SPX para Reversa
+Verificação obrigatória antes da tratativa.
+========================================================
 
-CONSULTA DE STATUS NO SISTEMA SPX
+[INTENÇÃO]
+Consulta sobre status, rastreio e BR.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+status reversa, consultar BR reversa, SPX reversa
 
-status reversa, rastreio reversa, consultar BR reversa, pacote devolvido status, SPX reversa
-
-PERGUNTA
-
+--------------------------------------------------------
+[PERGUNTA]
 Por que consultar o status?
 
-RESPOSTA
-
-Para identificar se o pacote seguirá devolução ao seller, reetiquetagem, salvados ou outra tratativa.
+[RESPOSTA]
+Para definir se o pacote seguirá seller, reetiquetagem, salvados ou outra tratativa.
 
 --------------------------------------------------------
-
-PERGUNTA
-
+[PERGUNTA]
 Onde consultar?
 
-RESPOSTA
-
-Pedidos > Rastreio de Pedidos no sistema SPX.
+[RESPOSTA]
+Pedidos > Rastreio de Pedidos.
 
 ========================================================
+[TEMA]
+Return Refund na Reversa
+Pacotes devolvidos pelo cliente após entrega.
+========================================================
 
-RETURN REFUND
+[INTENÇÃO]
+Consulta sobre QR Code, cliente devolveu e retorno ao seller.
 
-TERMOS DE LIGAÇÃO
-
-RR reversa, return refund reversa, QR code reversa, cliente devolveu pacote, devolução cliente seller
-
-PERGUNTA
-
-O que é Return Refund?
-
-RESPOSTA
-
-É o fluxo de devolução iniciado pelo cliente em ponto de coleta após a entrega.
+[PALAVRAS-CHAVE GERAIS]
+rr reversa, return refund reversa, qr code reversa
 
 --------------------------------------------------------
+[PERGUNTA]
+O que é Return Refund?
 
-PERGUNTA
+[RESPOSTA]
+Fluxo de devolução iniciado pelo cliente após entrega concluída.
 
+--------------------------------------------------------
+[PERGUNTA]
 Como identificar?
 
-RESPOSTA
-
-Pela presença de QR Code na embalagem.
+[RESPOSTA]
+Pela presença de QR Code no pacote.
 
 ========================================================
+[TEMA]
+Impressão de Etiqueta na Reversa
+Reetiquetagem operacional.
+========================================================
 
-IMPRESSÃO DE ETIQUETA
+[INTENÇÃO]
+Consulta sobre nova etiqueta e etiqueta avariada.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+etiqueta reversa, reetiquetar reversa, imprimir br reversa
 
-etiqueta reversa, reetiquetar reversa, nova etiqueta devolução, imprimir BR reversa
-
-PERGUNTA
-
+--------------------------------------------------------
+[PERGUNTA]
 Quando imprimir nova etiqueta?
 
-RESPOSTA
-
-Quando a original estiver danificada, ilegível, desatualizada ou o pacote entrar em reversa.
+[RESPOSTA]
+Quando a original estiver avariada, ilegível, desatualizada ou o pacote entrar em reversa.
 
 ========================================================
+[TEMA]
+Quarentena de Pacotes na Reversa
+Área temporária para pacotes pendentes.
+========================================================
 
-QUARENTENA DE PACOTES
+[INTENÇÃO]
+Consulta sobre duplicidade e retenção de pacote.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+quarentena reversa, pacote parado reversa
 
-quarentena reversa, pacote parado reversa, retenção reversa, duplicidade reversa
-
-PERGUNTA
-
+--------------------------------------------------------
+[PERGUNTA]
 Quando usar quarentena?
 
-RESPOSTA
-
+[RESPOSTA]
 Quando o pacote depende de atualização sistêmica antes de seguir para salvados.
 
 ========================================================
-
-FORA DE PERFIL SPX
-
-TERMOS DE LIGAÇÃO
-
-volumoso reversa, pesado reversa, grande reversa, fora padrão reversa, fora perfil devolução
-
-PERGUNTA
-
-Quando um pacote é fora de perfil?
-
-RESPOSTA
-
-Maior lado acima de 125 cm, soma total superior a 210 cm ou peso acima de 31 kg.
-
+[TEMA]
+Fora de Perfil SPX na Reversa
+Pacotes acima do padrão permitido.
 ========================================================
 
-CROSS BORDER
+[INTENÇÃO]
+Consulta sobre volumoso, pesado ou grande.
 
-TERMOS DE LIGAÇÃO
-
-cross border reversa, importado reversa, pacote internacional devolvido, aeroporto reversa
-
-PERGUNTA
-
-O que é Cross Border?
-
-RESPOSTA
-
-Operação Shopee responsável por pedidos internacionais recebidos em aeroportos e enviados ao SoC.
-
-========================================================
-
-STATUS FINALIZADOR
-
-TERMOS DE LIGAÇÃO
-
-status final reversa, entregue reversa, lost reversa, damaged reversa, pacote bloqueado reversa
-
-PERGUNTA
-
-O que é status finalizador?
-
-RESPOSTA
-
-É um status que bloqueia movimentações adicionais no sistema.
+[PALAVRAS-CHAVE GERAIS]
+fora perfil reversa, volumoso reversa, pesado reversa
 
 --------------------------------------------------------
+[PERGUNTA]
+Quando um pacote é fora de perfil?
 
-PERGUNTA
+[RESPOSTA]
+Maior lado acima de 125 cm, soma acima de 210 cm ou peso superior a 31 kg.
 
+========================================================
+[TEMA]
+Cross Border na Reversa
+Pacotes internacionais devolvidos.
+========================================================
+
+[INTENÇÃO]
+Consulta sobre importado, aeroporto e internacional.
+
+[PALAVRAS-CHAVE GERAIS]
+cross border reversa, importado reversa
+
+--------------------------------------------------------
+[PERGUNTA]
+O que é Cross Border?
+
+[RESPOSTA]
+Operação Shopee de pedidos internacionais recebidos em aeroportos e enviados ao SoC.
+
+========================================================
+[TEMA]
+Status Finalizador na Reversa
+Status que bloqueiam novas movimentações.
+========================================================
+
+[INTENÇÃO]
+Consulta sobre pacote encerrado ou bloqueado.
+
+[PALAVRAS-CHAVE GERAIS]
+status final reversa, delivered reversa, lost reversa
+
+--------------------------------------------------------
+[PERGUNTA]
+O que é status finalizador?
+
+[RESPOSTA]
+Status que impede qualquer nova movimentação sistêmica.
+
+--------------------------------------------------------
+[PERGUNTA]
 Exemplos?
 
-RESPOSTA
-
+[RESPOSTA]
 Delivered, Lost, Damaged, Disposed, Return Failed, 3PL Delivered e Liquidated.
 
 ========================================================
-
-LIQUIDATION
-
-TERMOS DE LIGAÇÃO
-
-liquidation reversa, liquidating reversa, pacote salvado reversa, liquidation seller
-
-PERGUNTA
-
-O que é Liquidation?
-
-RESPOSTA
-
-Status aplicado a pacotes destinados ao fluxo de salvados.
-
+[TEMA]
+Liquidation e Salvados na Reversa
+Pacotes destinados à comercialização.
 ========================================================
 
-SALVADOS
+[INTENÇÃO]
+Consulta sobre liquidation, salvados e leilão.
 
-TERMOS DE LIGAÇÃO
-
-salvados reversa, leilão reversa, venda pacote reversa, pacote não entregue venda, pallet reversa
-
-PERGUNTA
-
-O que é Salvados?
-
-RESPOSTA
-
-Processo de venda de produtos elegíveis após encerramento logístico.
+[PALAVRAS-CHAVE GERAIS]
+liquidation reversa, salvados reversa, pallet reversa
 
 --------------------------------------------------------
+[PERGUNTA]
+O que é Liquidation?
 
-PERGUNTA
+[RESPOSTA]
+Status aplicado a pacotes destinados ao fluxo de salvados.
 
+--------------------------------------------------------
+[PERGUNTA]
+O que é Salvados?
+
+[RESPOSTA]
+Processo de venda de produtos não entregues e não devolvidos ao seller.
+
+--------------------------------------------------------
+[PERGUNTA]
 Quais pacotes entram nesse fluxo?
 
-RESPOSTA
-
+[RESPOSTA]
 Pacotes com status Liquidating ou sem Tracking Number.
 
 ========================================================
-
-CATALOGAÇÃO DE SALVADOS
-
-TERMOS DE LIGAÇÃO
-
-catalogar reversa, catalogação salvados, registrar pacote reversa, pallet reversa sistema
-
-PERGUNTA
-
-Como funciona?
-
-RESPOSTA
-
-Pacotes com tracking number entram via sistema SPX. Pacotes sem tracking number entram por planilhas internas.
-
+[TEMA]
+Produtos Proibidos na Reversa
+Itens restritos na plataforma.
 ========================================================
 
-EXPEDIÇÃO DE SALVADOS
+[INTENÇÃO]
+Consulta sobre produto proibido e ticket EHA.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+produto proibido reversa, eha reversa, ticket reversa
 
-expedir salvados, saída reversa, coleta lote reversa, comprador reversa
-
-PERGUNTA
-
-Quem realiza carregamento?
-
-RESPOSTA
-
-Comprador ou transportadora responsável. Colaboradores Shopee não carregam.
-
-========================================================
-
-PRODUTOS PROIBIDOS
-
-TERMOS DE LIGAÇÃO
-
-produto proibido reversa, EHA reversa, item barrado reversa, ticket reversa
-
-PERGUNTA
-
+--------------------------------------------------------
+[PERGUNTA]
 O que fazer ao identificar produto proibido?
 
-RESPOSTA
-
+[RESPOSTA]
 Registrar motivo de tratativa, abrir ticket EHA, anexar evidências e seguir direcionamento operacional.
 
 ========================================================
-
-EXCEÇÕES DE PROCESSO
-
-TERMOS DE LIGAÇÃO
-
-erro reversa, exceção reversa, pacote travado reversa, problema status reversa
-
-PERGUNTA
-
-O que fazer quando pacote consta no 3PL?
-
-RESPOSTA
-
-Acionar liderança para atualização sistêmica para Return_SOC_Received.
-
---------------------------------------------------------
-
-PERGUNTA
-
-E quando pacote vem de LM Hub com erro?
-
-RESPOSTA
-
-Formalizar e-mail ao Controle RTS com evidências e aguardar direcionamento.
-
+[TEMA]
+Exceções de Processo na Reversa
+Casos fora do fluxo padrão.
 ========================================================
 
-TERMOS OPERACIONAIS
+[INTENÇÃO]
+Consulta sobre erros sistêmicos e pacotes travados.
 
-TERMOS DE LIGAÇÃO
+[PALAVRAS-CHAVE GERAIS]
+erro reversa, exceção reversa, pacote travado reversa
 
-siglas reversa, palavras reversa, linguagem reversa, termos SPX reversa
+--------------------------------------------------------
+[PERGUNTA]
+O que fazer quando pacote consta no 3PL?
 
-PERGUNTA
+[RESPOSTA]
+Acionar liderança para atualizar para Return_SOC_Received.
 
+--------------------------------------------------------
+[PERGUNTA]
+E quando vem de LM Hub com erro?
+
+[RESPOSTA]
+Formalizar e-mail ao Controle RTS com evidências e aguardar retorno.
+
+========================================================
+[TEMA]
+Termos Operacionais da Reversa
+Glossário da operação.
+========================================================
+
+[INTENÇÃO]
+Consulta sobre siglas e nomes operacionais.
+
+[PALAVRAS-CHAVE GERAIS]
+siglas reversa, termos reversa, linguagem reversa
+
+--------------------------------------------------------
+[PERGUNTA]
 O que significa SoC?
 
-RESPOSTA
-
-Sorting Center. Unidade logística operacional.
+[RESPOSTA]
+Sorting Center. Unidade logística.
 
 --------------------------------------------------------
-
-PERGUNTA
-
+[PERGUNTA]
 O que significa PDA?
 
-RESPOSTA
-
-Dispositivo portátil utilizado para bipagem e processos sistêmicos.
+[RESPOSTA]
+Dispositivo portátil para bipagem.
 
 --------------------------------------------------------
-
-PERGUNTA
-
+[PERGUNTA]
 O que significa TO?
 
-RESPOSTA
-
-Track Order. Etiqueta de identificação de unitizadores.
-
---------------------------------------------------------
-
-PERGUNTA
-
-O que significa Scuttle?
-
-RESPOSTA
-
-Estrutura utilizada para armazenar e transportar pacotes.
+[RESPOSTA]
+Track Order. Etiqueta de unitizador.
 
 --------------------------------------------------------
-
-PERGUNTA
-
+[PERGUNTA]
 O que significa D2D?
 
-RESPOSTA
-
-Door to Door. Pedido fora da malha logística SPX.
-```
+[RESPOSTA]
+Door to Door. Pedido fora da malha SPX.
