@@ -1,18 +1,9 @@
+```txt
 PROCESSO DE REVERSA RETURNS
 
-Reversa Returns é o processo responsável pela devolução de pacotes que, por diversos motivos, precisaram ser retirados do fluxo normal de entrega. O objetivo é garantir rastreabilidade, integridade dos volumes, padronização operacional e destino correto de cada pacote.
+TERMOS DE LIGAÇÃO
 
-========================================================
-
-INTENÇÃO
-
-Consulta sobre devolução de pacotes, tratativas operacionais, exceções logísticas, salvados, status sistêmicos e processos internos no Sorting Center.
-
-PALAVRAS-CHAVE GERAIS
-
-reversa, returns, devolução, pacote devolvido, seller, salvados, tratativa, status, SPX, SoC, logística, exceção
-
---------------------------------------------------------
+reversa, returns, devolução, pacote devolvido, seller, pacote voltou, retorno logístico, fluxo reversa, tratativa reversa
 
 PERGUNTA
 
@@ -20,13 +11,13 @@ O que é o processo de Reversa Returns?
 
 RESPOSTA
 
-É o processo operacional destinado a pacotes que saíram do fluxo normal de entrega e precisam de devolução, reprocessamento, tratativa sistêmica ou destinação específica.
+Reversa Returns é o processo responsável pela devolução de pacotes que, por diversos motivos, precisaram ser retirados do fluxo normal de entrega. O objetivo é garantir rastreabilidade, integridade dos volumes, padronização operacional e destino correto de cada pacote.
 
 --------------------------------------------------------
 
 PERGUNTA
 
-Qual o principal objetivo desse processo?
+Qual o principal objetivo da reversa?
 
 RESPOSTA
 
@@ -36,7 +27,7 @@ Garantir controle operacional, rastreabilidade, integridade física do pacote e 
 
 PERGUNTA
 
-Onde esse processo se aplica?
+Onde o processo se aplica?
 
 RESPOSTA
 
@@ -46,9 +37,9 @@ Em todos os Sorting Centers da Shopee Xpress Brasil.
 
 REGRAS GERAIS DE SEGURANÇA E QUALIDADE
 
-Normas obrigatórias para execução segura das atividades.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+reversa segurança, segurança reversa, doca reversa, regras reversa, EPI reversa, operação reversa segura
 
 PERGUNTA
 
@@ -82,9 +73,9 @@ Sempre realizado por duas pessoas.
 
 BOAS PRÁTICAS OPERACIONAIS
 
-Ações recomendadas para aumentar produtividade, organização e segurança.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+boas práticas reversa, melhoria reversa, produtividade reversa, organização reversa, padrão reversa
 
 PERGUNTA
 
@@ -108,9 +99,9 @@ Não. São recomendações operacionais para melhoria contínua.
 
 OPSID E WORKSTATION
 
-Controle sistêmico individual para execução operacional.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+login reversa, workstation reversa, check-in reversa, sistema reversa, acesso reversa, opsid reversa
 
 PERGUNTA
 
@@ -144,9 +135,9 @@ RESPOSTA
 
 SEGURANÇA EM DOCA E MANOBRA
 
-Procedimentos obrigatórios durante chegada e descarga de veículos.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+doca reversa, descarga reversa, caminhão reversa, manobra reversa, recebimento reversa doca
 
 PERGUNTA
 
@@ -170,9 +161,9 @@ Solicitar chave do veículo, pendurar no claviculário e exigir aplicação de d
 
 RECEBIMENTO 3PL XD
 
-Entrada de pacotes devolvidos por transportadoras terceiras após insucesso de entrega ao cliente.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+reversa 3pl, reversa xd, pacote devolvido transportadora, recebimento reversa 3pl, pacote voltou cliente
 
 PERGUNTA
 
@@ -202,23 +193,13 @@ RESPOSTA
 
 Produto avariado, BR ilegível, pacote sem etiqueta BR, pacote fora do romaneio, pacote D2D ou pacote de outro marketplace.
 
---------------------------------------------------------
-
-PERGUNTA
-
-Pacotes J&T e Loggi sem BR podem ser recebidos?
-
-RESPOSTA
-
-Somente se o código constar na planilha de redespacho.
-
 ========================================================
 
 TRIAGEM NO RECEBIMENTO
 
-Separação inicial dos pacotes recebidos.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+triagem reversa, separação reversa, gaiola reversa, organizar devolução, recebimento reversa triagem
 
 PERGUNTA
 
@@ -232,9 +213,9 @@ Pacotes sem BR em uma gaiola específica, pacotes com possível recusa em outra 
 
 ROMANEIO E LIBERAÇÃO DE MOTORISTA
 
-Controle documental do recebimento.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+romaneio reversa, motorista reversa, documento reversa, liberação caminhão reversa, planilha reversa
 
 PERGUNTA
 
@@ -258,9 +239,9 @@ Líder ou Analista de Reversa.
 
 RECEBIMENTO 3PL RTS (CORREIOS)
 
-Fluxo de devolução ao seller realizado pelos Correios.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+reversa correios, correios seller, pacote devolvido correios, RTS reversa, correios returns
 
 PERGUNTA
 
@@ -284,9 +265,9 @@ Pela etiqueta específica de devolução Correios.
 
 RECEBIMENTO XPT
 
-Devoluções recebidas diretamente no Sorting Center.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+xpt reversa, devolução xpt, recebimento reversa xpt, pacote xpt voltou
 
 PERGUNTA
 
@@ -300,9 +281,9 @@ Recebimento unitário com direcionamento conforme status online ou status finali
 
 CONSULTA DE STATUS NO SISTEMA SPX
 
-Etapa obrigatória para definir destino correto do pacote.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+status reversa, rastreio reversa, consultar BR reversa, pacote devolvido status, SPX reversa
 
 PERGUNTA
 
@@ -326,9 +307,9 @@ Pedidos > Rastreio de Pedidos no sistema SPX.
 
 RETURN REFUND
 
-Pacotes devolvidos pelo cliente após entrega concluída.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+RR reversa, return refund reversa, QR code reversa, cliente devolveu pacote, devolução cliente seller
 
 PERGUNTA
 
@@ -352,9 +333,9 @@ Pela presença de QR Code na embalagem.
 
 IMPRESSÃO DE ETIQUETA
 
-Processo para substituir ou gerar nova etiqueta.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+etiqueta reversa, reetiquetar reversa, nova etiqueta devolução, imprimir BR reversa
 
 PERGUNTA
 
@@ -368,9 +349,9 @@ Quando a original estiver danificada, ilegível, desatualizada ou o pacote entra
 
 QUARENTENA DE PACOTES
 
-Área temporária de retenção operacional.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+quarentena reversa, pacote parado reversa, retenção reversa, duplicidade reversa
 
 PERGUNTA
 
@@ -384,9 +365,9 @@ Quando o pacote depende de atualização sistêmica antes de seguir para salvado
 
 FORA DE PERFIL SPX
 
-Pacotes acima do limite operacional permitido.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+volumoso reversa, pesado reversa, grande reversa, fora padrão reversa, fora perfil devolução
 
 PERGUNTA
 
@@ -400,9 +381,9 @@ Maior lado acima de 125 cm, soma total superior a 210 cm ou peso acima de 31 kg.
 
 CROSS BORDER
 
-Pacotes importados recebidos via aeroportos.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+cross border reversa, importado reversa, pacote internacional devolvido, aeroporto reversa
 
 PERGUNTA
 
@@ -416,9 +397,9 @@ Operação Shopee responsável por pedidos internacionais recebidos em aeroporto
 
 STATUS FINALIZADOR
 
-Status que impedem novas movimentações sistêmicas.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+status final reversa, entregue reversa, lost reversa, damaged reversa, pacote bloqueado reversa
 
 PERGUNTA
 
@@ -442,9 +423,9 @@ Delivered, Lost, Damaged, Disposed, Return Failed, 3PL Delivered e Liquidated.
 
 LIQUIDATION
 
-Fluxo sistêmico de entrada em salvados.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+liquidation reversa, liquidating reversa, pacote salvado reversa, liquidation seller
 
 PERGUNTA
 
@@ -458,9 +439,9 @@ Status aplicado a pacotes destinados ao fluxo de salvados.
 
 SALVADOS
 
-Comercialização de produtos não entregues nem devolvidos ao seller.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+salvados reversa, leilão reversa, venda pacote reversa, pacote não entregue venda, pallet reversa
 
 PERGUNTA
 
@@ -484,9 +465,9 @@ Pacotes com status Liquidating ou sem Tracking Number.
 
 CATALOGAÇÃO DE SALVADOS
 
-Registro operacional dos itens elegíveis para venda.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+catalogar reversa, catalogação salvados, registrar pacote reversa, pallet reversa sistema
 
 PERGUNTA
 
@@ -500,9 +481,9 @@ Pacotes com tracking number entram via sistema SPX. Pacotes sem tracking number 
 
 EXPEDIÇÃO DE SALVADOS
 
-Saída de lotes vendidos.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+expedir salvados, saída reversa, coleta lote reversa, comprador reversa
 
 PERGUNTA
 
@@ -516,9 +497,9 @@ Comprador ou transportadora responsável. Colaboradores Shopee não carregam.
 
 PRODUTOS PROIBIDOS
 
-Itens não permitidos na plataforma.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+produto proibido reversa, EHA reversa, item barrado reversa, ticket reversa
 
 PERGUNTA
 
@@ -532,9 +513,9 @@ Registrar motivo de tratativa, abrir ticket EHA, anexar evidências e seguir dir
 
 EXCEÇÕES DE PROCESSO
 
-Casos fora do fluxo padrão.
+TERMOS DE LIGAÇÃO
 
---------------------------------------------------------
+erro reversa, exceção reversa, pacote travado reversa, problema status reversa
 
 PERGUNTA
 
@@ -557,6 +538,10 @@ Formalizar e-mail ao Controle RTS com evidências e aguardar direcionamento.
 ========================================================
 
 TERMOS OPERACIONAIS
+
+TERMOS DE LIGAÇÃO
+
+siglas reversa, palavras reversa, linguagem reversa, termos SPX reversa
 
 PERGUNTA
 
@@ -605,3 +590,4 @@ O que significa D2D?
 RESPOSTA
 
 Door to Door. Pedido fora da malha logística SPX.
+```
